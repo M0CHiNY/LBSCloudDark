@@ -1,0 +1,13 @@
+/* import scss files */
+import '../scss/app.scss';
+
+/* HTML PARTS INCLUDE */
+import './inc-html.js';
+import './menu.js';
+
+import './script.js';
+
+
+
+
+
