@@ -1,0 +1,137 @@
+.why {
+  padding-top: 95px;
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__pre-title {
+    @include Intro-400;
+    margin-bottom: 30px;
+    text-align: center;
+    @include _1024 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+}
+.card-list {
+  display: flex;
+  gap: 61px;
+  padding: 59px 66px 0;
+
+  @include _1024 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @include _540 {
+    padding: 20px 30px 0;
+  }
+
+  @include _398 {
+    padding: 15px 0 0;
+  }
+
+  &__inner {
+    position: relative;
+    width: 497px;
+    @include _1024 {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &:first-child::before,
+    &:last-child::after {
+      content: url("../images/detail/pentagon.svg");
+      position: absolute;
+      width: 133px;
+      height: 133px;
+      z-index: -4;
+      @include _540 {
+        transform: scale(0.5);
+      }
+      @include _398 {
+        display: none;
+      }
+    }
+
+    &:first-child::before {
+      left: -66px;
+      top: -59px;
+    }
+
+    &:last-child::after {
+      right: -66px;
+      bottom: 20%;
+      transform: rotate(60deg);
+      @include _540 {
+        transform: scale(0.5);
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    padding: 48px 14px 42px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 3;
+    @include _540 {
+      padding: 15px 5px 10px 20px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 22px;
+    max-width: 306px;
+    @include Intro-400;
+    font-size: 24px;
+    color: #111111;
+    @include _540 {
+      font-size: 21px;
+    }
+
+    @include _398 {
+      font-size: 18px;
+    }
+  }
+  &__list {
+    max-width: 416px;
+  }
+  &__item {
+    position: relative;
+    padding-left: 27px;
+    color: #111;
+    @include _540 {
+      padding-left: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #1523b7;
+      left: 0;
+      top: 2px;
+      border-radius: 50%;
+      @include _540 {
+        font-size: 15px;
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+      @include _540 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
