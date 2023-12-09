@@ -1,0 +1,41 @@
+.use-product {
+  position: relative;
+  z-index: 3;
+  padding: 95px 0;
+  background-color: #fff;
+
+  @include _1024 {
+    padding: 50px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    @include _834 {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    max-width: 425px;
+    margin-bottom: 74px;
+    min-height: 108px;
+    @include _1024 {
+      margin-bottom: 50px;
+    }
+    
+    @include _834 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    max-width: 527px;
+    width: 100%;
+    object-fit: cover;
+    @include _834 {
+      margin: 0 auto;
+    }
+  }
+}

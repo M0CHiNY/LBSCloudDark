@@ -1,0 +1,129 @@
+.about {
+  padding-top: 95px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__pre-title {
+    text-transform: uppercase;
+    @include Intro-400;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 100%;
+    margin-bottom: 68px;
+    text-align: center;
+    @include _1024 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 89px;
+
+  @include _1024 {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 35px;
+  }
+  @include _767 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include _540 {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .card {
+    position: relative;
+    text-align: center;
+    max-width: 214px;
+    margin: 0 auto;
+    z-index: 3;
+
+    @include _767 {
+      margin: 0;
+    }
+    @include _540 {
+      margin: 0 auto;
+    }
+    &__box-img {
+      position: relative;
+      width: 59px;
+      height: 59px;
+      margin: 0 auto 28px;
+      @include _540 {
+        margin-bottom: 15px;
+      }
+      svg {
+        text-align: center;
+      }
+      span {
+        position: absolute;
+        @include Intro-400;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:first-child,
+    &:nth-child(5) {
+      margin: 0;
+
+      @include _540 {
+        margin: 0 auto;
+      }
+    }
+
+    &:nth-child(6) {
+      grid-column: span 2;
+      max-width: 375px;
+      @include _1024 {
+        margin: 0;
+
+        @include _540 {
+          margin: 0 auto;
+        }
+      }
+      @include _767 {
+        grid-column: span 1;
+      }
+    }
+
+    &:nth-child(7) {
+      max-width: 302px;
+    }
+
+    &:nth-child(4) {
+      @include _1024 {
+        margin-left: auto;
+      }
+      @include _767 {
+        margin: 0;
+      }
+      @include _540 {
+        margin: 0 auto;
+      }
+    }
+    &:nth-child(5) {
+      @include _1024 {
+        grid-column: span 2;
+        margin: 0 auto;
+      }
+
+      @include _767 {
+        margin: 0;
+        grid-column: span 1;
+      }
+      @include _540 {
+        margin: 0 auto;
+      }
+    }
+  }
+}
