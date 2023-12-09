@@ -1,0 +1,68 @@
+.your-time {
+  padding-top: 55px;
+  &__title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 77px;
+    @include _1024{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.time-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 37px;
+  row-gap: 57px;
+
+  @include _1024 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include _540{
+    row-gap: 37px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 561px;
+    min-height: 146px;
+    width: 100%;
+    padding: 35px 121px 20px 39px;
+    border-radius: 10px;
+    background-color: #275af3;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    z-index: 3;
+
+    @include _1024{
+      margin: 0 auto;
+    }
+    @include _540{
+      padding: 38px 15px 20px 15px;
+    }
+    
+    &::before {
+      content: url("../images/detail/pentagon-small.svg");
+      position: absolute;
+      height: 59px;
+      width: 57px;
+      top: -16px;
+      right: 32px;
+    }
+  }
+
+  &__caption {
+    max-width: 401px;
+    @include Intro-400;
+
+    @include _540{
+      max-width: 300px;
+    }
+  }
+
+  &__text {
+    max-width: 401px;
+  }
+}
