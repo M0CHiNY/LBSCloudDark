@@ -1,3 +1,77 @@
 .subhead {
-  
+    background-image: url('../images/subhead/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+  &__inner {
+    padding-top: 83px;
+    padding-bottom: 50px;
+    &.subhead-gradient--home {
+      background: linear-gradient(
+        180deg,
+        rgba(39, 90, 243, 0.5) 0%,
+        rgba(21, 35, 183, 0.5) 100%
+      );
+    }
+    &.subhead-gradient--blue {
+      background: linear-gradient(
+        180deg,
+        rgba(39, 90, 243, 0.8) 0%,
+        rgba(21, 35, 183, 0.8) 100%
+      );
+    }
+  }
+  &-title {
+    margin-bottom: 33px;
+    &--width-small {
+      width: 307px;
+    }
+  }
+  &-description {
+    &.subhead-description-small {
+      max-width: 307px;
+      width: 100%;
+    }
+
+    &.subhead-description-medium {
+      max-width: 647px;
+      width: 100%;
+    }
+
+    &.subhead-description-large {
+      max-width: 653px;
+      width: 100%;
+    }
+
+    &.subhead-description-xlarge {
+      max-width: 705px;
+      width: 100%;
+    }
+
+    &.subhead-description-xxlarge {
+      max-width: 857px;
+      width: 100%;
+    }
+
+    &.subhead-description-medium2 {
+      max-width: 500px;
+      width: 100%;
+    }
+
+    &.subhead-description-xlarge2 {
+      max-width: 710px;
+      width: 100%;
+    }
+  }
+
+  &-btn {
+    padding-left: 26px;
+    padding-right: 26px;
+    width: fit-content;
+  }
+  :has(.subhead-btn) {
+    .subhead-description {
+      margin-bottom: 42px;
+    }
+  }
 }
