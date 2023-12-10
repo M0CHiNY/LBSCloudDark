@@ -32,7 +32,7 @@
     @include _1024 {
       top: unset;
       right: unset;
-      bottom: -20%;
+      bottom: -25%;
       display: flex;
       justify-content: center;
       padding-bottom: 40px;
@@ -44,6 +44,7 @@
   &-pagination__next {
     position: relative;
     cursor: pointer;
+    pointer-events: auto;
     &::after {
       content: "";
       position: absolute;
@@ -85,7 +86,6 @@
     padding-top: 34px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 28px;
     background-color: #fff;
     color: #000;
     width: 220px;

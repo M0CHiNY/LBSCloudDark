@@ -48,34 +48,34 @@ window.addEventListener("orientationchange", () => {
 });
 
 
-// function setEqualHeightToBlogItems() {
-//   const blogItems = document.querySelectorAll('.complex-cart');
+function setEqualHeightToBlogItems() {
+  const blogItems = document.querySelectorAll('.complex-cart');
 
-//   if (blogItems.length > 0) {
-//       let maxHeight = 0;
+  if (blogItems.length > 0) {
+      let maxHeight = 0;
 
-//       blogItems.forEach(function (item) {
-//           item.style.height = ''; // Скидаємо попередню висоту перед визначенням нової
+      blogItems.forEach(function (item) {
+          item.style.height = ''; // Скидаємо попередню висоту перед визначенням нової
 
-//           const itemHeight = item.clientHeight;
+          const itemHeight = item.clientHeight;
 
-//           if (itemHeight > maxHeight) {
-//               maxHeight = itemHeight;
-//           }
-//       });
+          if (itemHeight > maxHeight) {
+              maxHeight = itemHeight;
+          }
+      });
 
-//       blogItems.forEach(function (item) {
-//           item.style.height = maxHeight + 'px';
-//       });
-//   } else {
-//       console.warn('Element with class .articlecontent not found.');
-//   }
-// }
+      blogItems.forEach(function (item) {
+          item.style.height = maxHeight + 'px';
+      });
+  } else {
+      console.warn('Element with class .articlecontent not found.');
+  }
+}
 
-// // Викликати функцію при завантаженні сторінки
-// setEqualHeightToBlogItems();
+// Викликати функцію при завантаженні сторінки
+setEqualHeightToBlogItems();
 
-// // Викликати функцію при кожному зміні розмірів екрану
-// window.addEventListener('resize', setEqualHeightToBlogItems);
+// Викликати функцію при кожному зміні розмірів екрану
+window.addEventListener('resize', setEqualHeightToBlogItems);
 
 

@@ -50,11 +50,10 @@
 }
 
 .nav-menu {
-  @include Intro-400;
-  font-size: 15px;
-  @include _1246 {
-    font-size: 13px;
-  }
+  // @include Intro-400;
+  font-size: 20px;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .nav-menu a {
@@ -70,6 +69,7 @@
 :is(.nav-menu, .nav-submenu) a {
   padding: 0.6rem 1rem;
   display: block;
+  
 }
 @media (min-width: 1024px) {
   :is(.nav-menu, .nav-submenu) a {
@@ -82,6 +82,7 @@
   @include Roboto-400;
   font-size: calc(15 / 16 * 1rem);
   background-color: #fff;
+  min-width: 120px;
 }
 @media (min-width: 1024px) {
   .nav-submenu {
@@ -226,7 +227,7 @@
 
 @media (min-width: 1024px) {
   .mob-nav{
-    margin-left: 33px;
+    margin-left: 80px;
   }
   .mob-nav-close,
   .logo--mob {
@@ -245,7 +246,7 @@
   .nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .nav-submenu {
     --ui-dropdown-arrow-offset: 0rem;
