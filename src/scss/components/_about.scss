@@ -19,6 +19,10 @@
     @include _1024 {
       margin-bottom: 30px;
     }
+
+    &--benefit {
+      margin-bottom: 39px;
+    }
   }
 }
 
@@ -38,6 +42,19 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 20px;
     padding-bottom: 10px;
+  }
+
+  &--benefit {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include _1024 {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 15px;
+    }
+
+    @include _767 {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .card {
@@ -124,6 +141,45 @@
       @include _540 {
         margin: 0 auto;
       }
+    }
+
+    &--benefit {
+      max-width: 340px;
+      &:last-child {
+        margin: 0;
+        margin-left: auto;
+
+        @include _1024 {
+          grid-column: span 2;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        @include _767 {
+          grid-column: span 1;
+          max-width: 450px;
+        }
+      }
+      @include _1140 {
+        max-width: 300px;
+      }
+
+      @include _1024 {
+        max-width: 450px;
+      }
+
+      @include _767 {
+        margin: 0 auto;
+      }
+      &:first-child {
+        @include _767 {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__caption {
+      @include Intro-400;
     }
   }
 }

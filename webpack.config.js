@@ -11,17 +11,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const pages = [
-  "blog",
-  "info",
-  "customization",
   "crm",
-  "integrations",
-  "human-resources",
-  "project-manager",
-  "contact-center",
-  "website-builder",
-  "finance",
-  'prices'
+  'odoo',
 ]; 
 // list pages
 const environment = require("./configuration/environment");

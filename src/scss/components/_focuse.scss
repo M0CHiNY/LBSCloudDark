@@ -20,6 +20,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 38px;
     row-gap: 54px;
+
     @include _1200 {
       column-gap: 15px;
       row-gap: 34px;
@@ -29,6 +30,15 @@
     }
     @include _767 {
       grid-template-columns: repeat(1, 1fr);
+    }
+    &--odoo {
+      @include _1156 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include _767 {
+        display: block;
+      }
     }
   }
   &__card {
@@ -40,6 +50,7 @@
     color: #121212;
     border-radius: 10px;
     z-index: 3;
+
     @include _1140 {
       padding: 32px 22px 10px;
     }
@@ -57,6 +68,7 @@
       top: -23px;
       text-align: center;
     }
+
     span {
       display: block;
       @include Intro-400;
@@ -68,9 +80,55 @@
         margin-bottom: 10px;
       }
     }
-    p {
-      font-size: 15px;
-      text-align: center;
+
+    &--odoo {
+      width: 364px;
+      padding: 32px 29px 10px 39px;
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        grid-row: 2;
+        grid-column: span 2;
+        margin: 0 auto;
+
+        @include _1156 {
+          grid-row: auto;
+          grid-column: span 1;
+        }
+      }
+
+      &:nth-child(5) {
+        transform: translateX(-50%);
+
+        @include _1156 {
+          transform: translateX(0);
+          grid-column: span 2;
+          margin: 0 auto;
+        }
+      }
+
+      @include _1200 {
+        max-width: 364px;
+      }
+
+      @include _1156 {
+        margin: 0 auto;
+      }
+
+      @include _767 {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+      
+      @include _398 {
+        max-width: 310px;
+      }
     }
+  }
+  &__descr {
+    max-width: 302px;
+    font-size: 15px;
+    text-align: center;
   }
 }
