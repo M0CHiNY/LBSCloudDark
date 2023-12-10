@@ -73,7 +73,7 @@
 }
 @media (min-width: 1024px) {
   :is(.nav-menu, .nav-submenu) a {
-    padding: 0.2rem 0.7rem;
+    padding: 0.2rem 20px;
   }
 }
 .nav-submenu {
@@ -225,6 +225,9 @@
 }
 
 @media (min-width: 1024px) {
+  .mob-nav{
+    margin-left: 33px;
+  }
   .mob-nav-close,
   .logo--mob {
     display: none;

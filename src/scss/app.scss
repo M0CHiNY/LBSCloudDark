@@ -1,8 +1,10 @@
-/* libs */
-@import "base/libs";
+
 
 /* CSS Reset */
 @import "base/reset";
+
+/* libs */
+@import "base/libs";
 
 /* Fonts */
 @import "base/fonts";
@@ -16,8 +18,11 @@
 //parts
 @import "components/header";
 @import "components/menu";
+@import "components/comlex-slider";
 @import "components/scroll";
 @import "components/subhead";
 @import "components/action";
 @import "components/opportunity";
+
+
 @import "components/footer";
