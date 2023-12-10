@@ -32,10 +32,10 @@ body {
     z-index: 2;
   }
   &::before {
-    left: 35.8%;
+    left: 36%;
   }
   &::after {
-    right: 36.2%;
+    right: 36%;
   }
   @include _1399 {
     &::after,
@@ -98,7 +98,8 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   outline: none;
   border: none;
   z-index: 1;

@@ -4,9 +4,10 @@ import '../scss/app.scss';
 /* HTML PARTS INCLUDE */
 import './inc-html.js';
 import './menu.js';
-
+import './swiper-custom.js';
 import './script.js';
 
+s
 
 
 
