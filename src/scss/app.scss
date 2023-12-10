@@ -1,10 +1,8 @@
-
+/* libs */
+@import "base/libs";
 
 /* CSS Reset */
 @import "base/reset";
-
-/* libs */
-@import "base/libs";
 
 /* Fonts */
 @import "base/fonts";
@@ -21,8 +19,11 @@
 @import "components/comlex-slider";
 @import "components/scroll";
 @import "components/subhead";
-@import "components/action";
+@import "components/about";
+@import "components/why";
 @import "components/opportunity";
-
-
+@import "components/use-product";
+@import "components/focuse";
+@import "components/your-time";
+@import "components/action";
 @import "components/footer";

@@ -1,17 +1,34 @@
 .opportunity {
+  padding-top: 95px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__first-title {
+    text-align: center;
+    max-width: 100%;
+  }
+
   &__box {
-    margin-top: calc(35px - (35 - 75) * ((100vw - 1024px) / (1920 - 1024)));
+    margin-top: 103px;
     display: flex;
-    gap: 203px;
+    gap: 92px;
     @include _1024 {
       flex-direction: column;
       align-items: center;
-      gap: calc(10px - (50 - 10) * ((100vw - 1400px) / (1920 - 1400)));
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    @include _767 {
+      margin-top: 30px;
     }
   }
 
   &__box-text {
-    width: calc(343px - (343 - 425) * ((100vw - 1024px) / (1920 - 1024)));
+    max-width: 551px;
+
     &--reverse {
       order: 1;
 
@@ -21,36 +38,45 @@
     }
 
     @include _1024 {
+      max-width: 850px;
       width: 100%;
-      margin-bottom: 25px;
-      margin: 0 auto;
+    }
+
+    p {
+      color: #fff;
+      background-color: #0e0e0e;
     }
   }
 
   &__title {
-    margin: calc(67px - (67 - 97) * ((100vw - 1024px) / (1920 - 1024))) 0 53px;
+    margin: 55px 0 53px;
     position: relative;
     z-index: 3;
     background: #fff;
     background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
     background-clip: text;
+    max-width: 473px;
 
     @include _1024 {
       max-width: 100%;
       text-align: center;
-      margin: 30px 0;
+      margin: 20px 0;
+    }
+
+    &.info-cards--title {
+      margin-top: 0;
     }
   }
 
   &__box-description {
-    max-width: 343px;
+    max-width: 551px;
     position: relative;
     z-index: 3;
     background: #fff;
     color: black;
     @include _1024 {
-      max-width: 75%;
-      margin: 0 auto 30px;
+      max-width: 100%;
+      margin: 0;
     }
   }
 
@@ -67,6 +93,7 @@
       text-align: center;
       padding-top: 25px;
       padding-left: 25px;
+      min-height: 200px;
     }
 
     &::before {
@@ -103,11 +130,16 @@
     display: block;
     width: 444px;
     max-width: 444px;
-    height: auto;
     object-fit: cover;
+    border-radius: 10px;
 
     @include _540 {
-      width: calc(350px - (350 - 444) * ((100vw - 375px) / (540 - 375)));
+      width: calc(444px + (444 - 300) * ((100vw - 540px) / (540 - 375)));
     }
   }
+}
+
+.info-cards {
+  padding-top: 25px;
+  padding-bottom: 95px;
 }
