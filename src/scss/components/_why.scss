@@ -51,7 +51,6 @@
       position: absolute;
       width: 133px;
       height: 133px;
-      z-index: -4;
       @include _540 {
         transform: scale(0.5);
       }
@@ -83,6 +82,9 @@
     z-index: 3;
     @include _540 {
       padding: 15px 5px 10px 20px;
+    }
+     &--odoo {
+      padding-top: calc(120px + (120 - 50) * ((100vw - 1920px) / (1920 - 375)));
     }
   }
 
@@ -132,6 +134,20 @@
       @include _540 {
         margin-bottom: 10px;
       }
+    }
+  }
+  &__smoll-text {
+    color: #111;
+    padding-left: 27px;
+    &:first-child{
+      margin-bottom: 15px;
+    }
+    &:last-child {
+      margin-top: 15px;
+    }
+
+    @include _540 {
+      padding-left: 0;
     }
   }
 }
