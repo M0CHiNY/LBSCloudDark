@@ -120,21 +120,22 @@
   }
   &_wr {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
     @include _1024 {
       display: none;
     }
   }
 }
 @include _1024 {
-  ul.lang-switcher.lang-switcher--mobile {
+  div.lang-switcher.lang-switcher--mobile {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
     text-transform: uppercase;
     margin-right: 10px;
-    margin-top: 10px;
+    // margin-top: 10px;
     .lang-switcher-link {
       padding: 2px 5px;
       color: #000;
