@@ -150,12 +150,13 @@
     display: block;
     width: 444px;
     max-width: 444px;
-    max-height: 316px;
+    min-height: 316px;
     object-fit: cover;
     border-radius: 10px;
 
     @include _540 {
       width: calc(444px + (444 - 300) * ((100vw - 540px) / (540 - 375)));
+      min-height: calc(316px + (316 - 190) * ((100vw - 540px) / (540 - 375)));
     }
   }
 }
