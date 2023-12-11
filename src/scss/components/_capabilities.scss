@@ -1,0 +1,73 @@
+.capabilities {
+  padding-top: 67px;
+  @include _1024 {
+    padding-top: 50px;
+  }
+  &__title {
+    text-align: center;
+    max-width: 832px;
+    margin: 0 auto 83px;
+    span {
+      color: #fff;
+    }
+  }
+}
+.capabilities-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 85px;
+  column-gap: 57px;
+  @include _1200 {
+    row-gap: 40px;
+    column-gap: 18px;
+  }
+  @include _1024 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__box {
+    position: relative;
+    max-width: 546px;
+    width: 100%;
+    min-height: 231px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 48px 43px 15px 49px;
+    color: #121212;
+    z-index: 3;
+
+    &::before {
+      content: url("../images/detail/pentagon-midle.svg");
+      position: absolute;
+      left: 49px;
+      top: -34px;
+      width: 89px;
+      height: 88px;
+      @include _540 {
+        content: url("../images/detail/pentagon-small.svg");
+        width: 59px;
+        height: 59px;
+        top: -25px;
+      }
+    }
+    @include _1024 {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    @include _540 {
+      padding: 28px 15px 15px 20px;
+    }
+    span {
+      display: block;
+      @include Intro-400;
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

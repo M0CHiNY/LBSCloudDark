@@ -13,6 +13,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const pages = [
   "crm",
   'odoo',
+  'project-management'
 ]; 
 // list pages
 const environment = require("./configuration/environment");

@@ -64,52 +64,37 @@
     margin: 0 auto;
     z-index: 3;
 
-    @include _767 {
+    @include _1024 {
       margin: 0;
     }
-    @include _540 {
+
+    @include _767 {
       margin: 0 auto;
     }
-    &__box-img {
-      position: relative;
-      width: 59px;
-      height: 59px;
-      margin: 0 auto 28px;
-      @include _540 {
-        margin-bottom: 15px;
-      }
-      svg {
-        text-align: center;
-      }
-      span {
-        position: absolute;
-        @include Intro-400;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
+
     &:first-child,
     &:nth-child(5) {
       margin: 0;
 
-      @include _540 {
+      @include _767 {
         margin: 0 auto;
       }
     }
 
+    &:nth-child(3) {
+      @include _1024 {
+        margin: 0 auto;
+      }
+    }
     &:nth-child(6) {
       grid-column: span 2;
       max-width: 375px;
       @include _1024 {
         margin: 0;
-
-        @include _540 {
-          margin: 0 auto;
-        }
-      }
-      @include _767 {
         grid-column: span 1;
+      }
+      @include _540 {
+        margin: 0 auto;
       }
     }
 
@@ -119,26 +104,9 @@
 
     &:nth-child(4) {
       @include _1024 {
-        margin-left: auto;
-      }
-      @include _767 {
         margin: 0;
       }
-      @include _540 {
-        margin: 0 auto;
-      }
-    }
-    &:nth-child(5) {
-      @include _1024 {
-        grid-column: span 2;
-        margin: 0 auto;
-      }
-
       @include _767 {
-        margin: 0;
-        grid-column: span 1;
-      }
-      @include _540 {
         margin: 0 auto;
       }
     }
@@ -178,8 +146,32 @@
       }
     }
 
+    &__box-img {
+      position: relative;
+      width: 59px;
+      height: 59px;
+      margin: 0 auto 28px;
+
+      @include _540 {
+        margin-bottom: 15px;
+      }
+      svg {
+        text-align: center;
+      }
+      span {
+        position: absolute;
+        @include Intro-400;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
     &__caption {
       @include Intro-400;
     }
+  }
+  p {
+    font-size: 15px;
   }
 }
