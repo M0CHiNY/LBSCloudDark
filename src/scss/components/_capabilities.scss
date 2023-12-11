@@ -16,6 +16,10 @@
     @include _1024 {
       padding-top: 50px;
     }
+
+    .capabilities-card__box {
+      min-height: 174px;
+    }
   }
 }
 .capabilities-card {
@@ -27,6 +31,7 @@
     row-gap: 40px;
     column-gap: 18px;
   }
+  
   @include _1024 {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -86,7 +91,7 @@
       @include _1140 {
         max-width: 546px;
       }
-      
+
       @include _1024 {
         max-width: 850px;
       }
