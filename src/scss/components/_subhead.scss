@@ -1,8 +1,15 @@
 .subhead {
-    background-image: url('../images/subhead/home.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
+  &--home {
+    background-image: url("../images/subhead/home.jpg");
+  }
+
+  &--other {
+    background-image: url("../images/subhead/other.jpg");
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
   &__inner {
     padding-top: 83px;
     padding-bottom: 50px;
@@ -19,9 +26,11 @@
         rgba(39, 90, 243, 0.8) 0%,
         rgba(21, 35, 183, 0.8) 100%
       );
+      padding-bottom: 75px;
     }
   }
   &-title {
+    color: #fff;
     margin-bottom: 33px;
     &--width-small {
       width: 307px;
