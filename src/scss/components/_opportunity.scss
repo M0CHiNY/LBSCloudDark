@@ -10,10 +10,20 @@
     max-width: 100%;
   }
 
+  &__second-title {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 117px;
+    @include _1024 {
+      margin-top: 50px;
+    }
+  }
+
   &__box {
     margin-top: 103px;
     display: flex;
     gap: 92px;
+
     @include _1024 {
       flex-direction: column;
       align-items: center;
@@ -23,6 +33,9 @@
 
     @include _767 {
       margin-top: 30px;
+    }
+    &--first {
+      margin-top: 45px;
     }
   }
 
@@ -78,6 +91,13 @@
       max-width: 100%;
       margin: 0;
     }
+
+    ul {
+      padding-left: 20px;
+      list-style: disc;
+      color: #fff;
+      background-color: #0e0e0e;
+    }
   }
 
   &__box-img {
@@ -130,6 +150,7 @@
     display: block;
     width: 444px;
     max-width: 444px;
+    max-height: 316px;
     object-fit: cover;
     border-radius: 10px;
 
