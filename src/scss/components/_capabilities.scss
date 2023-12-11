@@ -11,6 +11,12 @@
       color: #fff;
     }
   }
+  &--logicals {
+    padding-top: 110px;
+    @include _1024 {
+      padding-top: 50px;
+    }
+  }
 }
 .capabilities-card {
   display: grid;
@@ -67,6 +73,11 @@
 
     p {
       font-size: 15px;
+      text-align: center;
+    }
+    strong {
+      display: block;
+      @include Intro-400;
       text-align: center;
     }
     &--mod-size {

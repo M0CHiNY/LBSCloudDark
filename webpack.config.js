@@ -10,7 +10,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const pages = ["crm", "odoo", "project-management", "hr-project", 'finance', 'production']; 
+const pages = ["crm", "odoo", "project-management", "hr-project", 'finance', 'production', 'logistics']; 
 // list pages
 const environment = require("./configuration/environment");
 
