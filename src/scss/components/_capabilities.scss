@@ -69,5 +69,27 @@
       font-size: 15px;
       text-align: center;
     }
+    &--mod-size {
+      max-width: 364px;
+      min-height: 248px;
+      @include _1140 {
+        max-width: 546px;
+      }
+      
+      @include _1024 {
+        max-width: 850px;
+      }
+    }
+  }
+  &--mod-col {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include _1140 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include _1024 {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
