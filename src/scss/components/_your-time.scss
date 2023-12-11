@@ -4,8 +4,21 @@
     max-width: 100%;
     text-align: center;
     margin-bottom: 77px;
-    @include _1024{
+    @include _1024 {
       margin-bottom: 50px;
+    }
+  }
+  &--logistics {
+    padding-top: 95px;
+    @include _1024 {
+      padding-top: 50px;
+    }
+    
+    .time-box__item:nth-child(2) {
+      padding-right: 80px;
+      .time-box__text {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -20,7 +33,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  @include _540{
+  @include _540 {
     row-gap: 37px;
   }
 
@@ -36,13 +49,13 @@
     color: #fff;
     z-index: 3;
 
-    @include _1024{
+    @include _1024 {
       margin: 0 auto;
     }
-    @include _540{
+    @include _540 {
       padding: 38px 15px 20px 15px;
     }
-    
+
     &::before {
       content: url("../images/detail/pentagon-small.svg");
       position: absolute;
@@ -57,7 +70,7 @@
     max-width: 401px;
     @include Intro-400;
 
-    @include _540{
+    @include _540 {
       max-width: 300px;
     }
   }
