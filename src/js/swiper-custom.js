@@ -3,79 +3,77 @@ import Swiper from "swiper/bundle";
 
 // Section team start
 const teamSwiper = document.querySelector(".complex-slider");
-
-function initSwiper() {
-  return new Swiper(".complex-slider", {
-    navigation: {
-      nextEl: ".complex-pagination__next",
-      prevEl: ".complex-pagination__prev",
-    },
-    spaceBetween: 2,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      767: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 2,
-      },
-    },
-  });
-}
-
-let swiper;
-
 if (teamSwiper) {
-  swiper = initSwiper();
+  function initSwiper() {
+    return new Swiper(".complex-slider", {
+      navigation: {
+        nextEl: ".complex-pagination__next",
+        prevEl: ".complex-pagination__prev",
+      },
+      spaceBetween: 2,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        767: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 2,
+        },
+      },
+    });
+  }
 
-  window.addEventListener("resize", () => {
-    // Оновлюємо параметри слайдера при зміні розміру вікна
+  let swiper;
+
+  if (teamSwiper) {
+    swiper = initSwiper();
+
+    window.addEventListener("resize", () => {
+      // Оновлюємо параметри слайдера при зміні розміру вікна
+      swiper.destroy();
+      swiper = initSwiper();
+    });
+  }
+
+  // Якщо потрібно, також ви можете вручну оновити слайдер при зміні роздільної здатності
+  window.addEventListener("orientationchange", () => {
     swiper.destroy();
     swiper = initSwiper();
   });
-}
 
-// Якщо потрібно, також ви можете вручну оновити слайдер при зміні роздільної здатності
-window.addEventListener("orientationchange", () => {
-  swiper.destroy();
-  swiper = initSwiper();
-});
+  function setEqualHeightToBlogItems() {
+    const blogItems = document.querySelectorAll(".complex-cart");
 
-
-function setEqualHeightToBlogItems() {
-  const blogItems = document.querySelectorAll('.complex-cart');
-
-  if (blogItems.length > 0) {
+    if (blogItems.length > 0) {
       let maxHeight = 0;
 
       blogItems.forEach(function (item) {
-          item.style.height = ''; // Скидаємо попередню висоту перед визначенням нової
+        item.style.height = ""; // Скидаємо попередню висоту перед визначенням нової
 
-          const itemHeight = item.clientHeight;
+        const itemHeight = item.clientHeight;
 
-          if (itemHeight > maxHeight) {
-              maxHeight = itemHeight;
-          }
+        if (itemHeight > maxHeight) {
+          maxHeight = itemHeight;
+        }
       });
 
       blogItems.forEach(function (item) {
-          item.style.height = maxHeight + 'px';
+        item.style.height = maxHeight + "px";
       });
-  } else {
-      console.warn('Element with class .articlecontent not found.');
+    } else {
+      console.warn("Element with class .articlecontent not found.");
+    }
   }
+
+  // Викликати функцію при завантаженні сторінки
+  setEqualHeightToBlogItems();
+
+  // Викликати функцію при кожному зміні розмірів екрану
+  window.addEventListener("resize", setEqualHeightToBlogItems);
 }
-
-// Викликати функцію при завантаженні сторінки
-setEqualHeightToBlogItems();
-
-// Викликати функцію при кожному зміні розмірів екрану
-window.addEventListener('resize', setEqualHeightToBlogItems);
-
-
