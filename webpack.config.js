@@ -20,9 +20,10 @@ const pages = [
   "logistics",
   "logistics-2",
   "logistics-3",
-  'marketing',
-  'web',
-  'banking',
+  "marketing",
+  "web",
+  "banking",
+  "integrations",
 ]; 
 // list pages
 const environment = require("./configuration/environment");
