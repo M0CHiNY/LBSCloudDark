@@ -8,6 +8,10 @@
   &__first-title {
     text-align: center;
     max-width: 100%;
+    &.opportunity__title--medium {
+      max-width: 580px;
+      margin: 0 auto;
+    }
   }
 
   &__second-title {
@@ -18,11 +22,10 @@
       margin-top: 50px;
     }
   }
-  &__sub-text{
+  &__sub-text {
     max-width: 710px;
     text-align: center;
     margin: 15px auto 0;
-
   }
 
   &__box {

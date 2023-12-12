@@ -31,6 +31,8 @@
   }
   &-title {
     color: #fff;
+    font-size: calc(27px + (36 - 27) * ((100vw - 375px) / (1920 - 375)));
+    @include Intro-400;
     margin-bottom: 33px;
     &--width-small {
       width: 307px;
@@ -55,7 +57,7 @@
     }
 
     &.subhead-description-xlarge {
-      max-width: 705px;
+      max-width: 705px !important;
       width: 100%;
     }
 
