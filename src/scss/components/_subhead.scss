@@ -13,6 +13,14 @@
   &__inner {
     padding-top: 83px;
     padding-bottom: 50px;
+    @include _1024 {
+      padding-top: 50px;
+    padding-bottom: 40px;
+    }
+    @include _767 {
+      padding-top: 40px;
+    padding-bottom: 40px;
+    }
     &.subhead-gradient--home {
       background: linear-gradient(
         180deg,
@@ -27,11 +35,17 @@
         rgba(21, 35, 183, 0.8) 100%
       );
       padding-bottom: 75px;
+      @include _1024 {
+        padding-bottom: 50px;
+      }
+      @include _1024 {
+        padding-bottom: 40px;
+      }
     }
   }
   &-title {
     color: #fff;
-    font-size: calc(27px + (36 - 27) * ((100vw - 375px) / (1920 - 375)));
+    font-size: calc(20px + (36 - 20) * ((100vw - 375px) / (1920 - 375)));
     @include Intro-400;
     margin-bottom: 33px;
     &--width-small {
