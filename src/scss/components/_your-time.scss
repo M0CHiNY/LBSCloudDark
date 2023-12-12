@@ -8,14 +8,19 @@
       margin-bottom: 50px;
     }
   }
+
   &--logistics {
     padding-top: 95px;
     @include _1024 {
       padding-top: 50px;
     }
-    
+
     .time-box__item:nth-child(2) {
       padding-right: 80px;
+
+       @include _540 {
+        padding: 38px 15px 20px 15px;
+      }
       .time-box__text {
         max-width: 100%;
       }
@@ -64,6 +69,29 @@
       top: -16px;
       right: 32px;
     }
+    &--mod-full {
+      max-width: 100%;
+      grid-column: span 2;
+      .time-box__text {
+        max-width: 100%;
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+        }
+      }
+      .time-box__caption {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      @include _1024 {
+        grid-column: span 1;
+        max-width: 560px;
+        padding: 35px 80px 20px 39px;
+      }
+      @include _540 {
+        padding: 38px 15px 20px 15px;
+      }
+    }
   }
 
   &__caption {
@@ -77,5 +105,10 @@
 
   &__text {
     max-width: 401px;
+    
+    @include _540 {
+      max-width: 100%;
+      font-size: 15px;
+    }
   }
 }
