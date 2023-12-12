@@ -67,7 +67,7 @@ body {
   z-index: 3;
   background: linear-gradient(180deg, #275af3 0%, #1523b7 100%);
   background-clip: text;
-  font-size: calc(27px + (36 - 27) * ((100vw - 375px) / (1920 - 375)));
+  font-size: calc(20px + (36 - 20) * ((100vw - 375px) / (1920 - 375)));
   @include Intro-400;
   max-width: 425px;
   text-transform: uppercase;
