@@ -21,7 +21,17 @@
       min-height: 174px;
     }
   }
+  &--marketing {
+    padding-top: 95px;
+    @include _1024 {
+      padding-top: 50px;
+    }
+    .capabilities-card__box {
+      min-height: 156px;
+    }
+  }
 }
+
 .capabilities-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,7 +41,7 @@
     row-gap: 40px;
     column-gap: 18px;
   }
-  
+
   @include _1024 {
     grid-template-columns: repeat(1, 1fr);
   }
