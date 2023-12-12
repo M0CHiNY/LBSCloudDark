@@ -24,7 +24,7 @@
     @include _1024 {
       margin-bottom: 50px;
     }
-    
+
     @include _834 {
       margin-bottom: 30px;
     }
@@ -36,6 +36,34 @@
     object-fit: cover;
     @include _834 {
       margin: 0 auto;
+    }
+  }
+  &--integrations {
+    padding: 68px 0 82px;
+    .use-product__box {
+      display: flex;
+      justify-content: space-between;
+      @include _834 {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    .use-product__title {
+      margin: 0;
+      align-self: center;
+    }
+    .use-product__img {
+      max-width: 482px;
+      margin-right: 63px;
+      @include _1200 {
+        margin: 0;
+      }
+      @include _834 {
+        align-self: center;
+      }
+    }
+    @include _540 {
+      padding: 30px 0;
     }
   }
 }

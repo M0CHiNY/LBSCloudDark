@@ -19,8 +19,19 @@
 
     .capabilities-card__box {
       min-height: 174px;
+      
+      &::before {
+        content: url("../images/detail/pentagon-small.svg");
+        width: 59px;
+        height: 59px;
+        top: -25px;
+      }
+      &.capabilities-card__box--mod-size {
+        min-height: 248px;
+      }
     }
   }
+
   &--marketing {
     padding-top: 95px;
     @include _1024 {
@@ -28,6 +39,13 @@
     }
     .capabilities-card__box {
       min-height: 156px;
+    }
+  }
+  
+  &--integrations {
+    padding-bottom: 110px;
+    @include _1024 {
+      padding-bottom: 50px;
     }
   }
 }
