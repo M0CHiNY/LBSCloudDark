@@ -44,19 +44,6 @@
     padding-bottom: 10px;
   }
 
-  &--benefit {
-    grid-template-columns: repeat(3, 1fr);
-
-    @include _1024 {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 15px;
-    }
-
-    @include _767 {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-
   .card {
     position: relative;
     text-align: center;
@@ -173,5 +160,39 @@
   }
   p {
     font-size: 15px;
+  }
+
+  &--benefit {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include _1024 {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 15px;
+    }
+
+    @include _767 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &--services {
+    row-gap: 40px;
+    @include _540 {
+      row-gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .card {
+      max-width: 214px;
+      width: 100%;
+      grid-column: span 1;
+
+      &:nth-child(6) {
+        grid-column: span 1;
+        @include _1024 {
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }
