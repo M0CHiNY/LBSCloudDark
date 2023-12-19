@@ -1,0 +1,23 @@
+.business-start {
+  padding-top: 110px;
+
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &__title {
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  &__descr {
+    max-width: 701px;
+    text-align: center;
+    margin: 0 auto 45px;
+
+    p:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.services-subhead {
+  position: relative;
+  padding-top: 73px;
+  @include _1024 {
+    padding-top: 50px;
+  }
+
+  &::before {
+    content: url('../images/subhead/service-subhead--gradient.png');
+    position: absolute;
+    width: 312px;
+    height: 312px;
+    top: -108px;
+    left: 15%;
+  }
+  
+  &__title {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 33px;
+  }
+
+  &__description {
+    margin: 0 auto 33px;
+    text-align: center;
+
+    &--small {
+      max-width: 531px;
+    }
+
+    &--medium {
+      max-width: 542px;
+    }
+
+    &--large {
+      max-width: 666px;
+    }
+
+    &--xlarge {
+      max-width: 806px;
+    }
+
+    &--xxlarge {
+      max-width: 1060px;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px 30px;
+  }
+}
