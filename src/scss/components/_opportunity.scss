@@ -115,6 +115,15 @@
       margin: 0;
     }
 
+    strong {
+      display: block;
+      @include Roboto-700;
+      background-color: #0e0e0e;
+      color: #fff;
+      padding-bottom: 10px;
+      font-size: 24px;
+    }
+
     ul {
       padding-left: 20px;
       list-style: disc;
