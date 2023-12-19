@@ -1,8 +1,8 @@
 .focuse {
   padding-top: 95px;
-  
+
   &__title {
-    max-width:750px;
+    max-width: 750px;
     margin: 0 auto 81px;
     text-align: center;
     @include _1024 {
@@ -39,6 +39,30 @@
 
       @include _767 {
         display: block;
+      }
+    }
+    &--business-start {
+      .focuse__card.focuse__card--odoo {
+        width: 364px;
+        background-color: #1523b7;
+        min-height: 138px;
+        padding: 32px 20px 10px;
+        border-radius: 10px;
+        color: #fff;
+
+        span {
+          display: block;
+          text-align: center;
+          @include Intro-400;
+          font-size: 24px;
+          margin-bottom: 7px;
+        }
+
+        p {
+          text-align: center;
+          @include Roboto-700;
+          font-size: 15px;
+        }
       }
     }
   }
@@ -121,7 +145,7 @@
           margin-bottom: 30px;
         }
       }
-      
+
       @include _398 {
         max-width: 310px;
       }
