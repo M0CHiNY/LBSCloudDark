@@ -32,15 +32,15 @@
     &::before {
       background: linear-gradient(0deg, #efefef 0%, #efefef 100%), #efefef;
     }
-  }
-  .footer__socialnet-item {
-    background-color: #000;
-    color: #fff;
-  }
-  .footer__title,
-  .footer__nav a,
-  .footer__copyright {
-    color: #000;
+    .footer__socialnet-item {
+      background-color: #000;
+      color: #fff;
+    }
+    .footer__title,
+    .footer__nav a,
+    .footer__copyright {
+      color: #000;
+    }
   }
 }
 .footer__title {
