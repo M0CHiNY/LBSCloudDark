@@ -9,6 +9,15 @@
     max-width: 100%;
     margin: 0 auto 30px;
     text-align: center;
+  
+    span {
+      color: white;
+    }
+
+    &.opportunity__title--mod {
+      margin-bottom: 68px;
+      background-color: red;
+    }
   }
 
   &__descr {
