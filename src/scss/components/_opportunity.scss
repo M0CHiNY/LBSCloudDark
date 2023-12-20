@@ -144,15 +144,6 @@
       z-index: 3;
     }
 
-    strong {
-      display: block;
-      @include Roboto-700;
-      background-color: #0e0e0e;
-      color: #fff;
-      padding-bottom: 10px;
-      font-size: 24px;
-    }
-
     ul {
       padding-left: 20px;
       list-style: disc;
@@ -225,6 +216,21 @@
     @include _540 {
       width: calc(444px + (444 - 300) * ((100vw - 540px) / (540 - 375)));
       min-height: calc(316px + (316 - 190) * ((100vw - 540px) / (540 - 375)));
+    }
+  }
+  &__subtext {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  :has(.opportunity__subtext) {
+    padding-top: 50px;
+    @include _1024 {
+      padding-top: 25px;
+    }
+    @include _767 {
+      padding-top: 0;
     }
   }
 }
