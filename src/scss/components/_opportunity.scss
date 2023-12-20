@@ -52,6 +52,27 @@
       justify-content: space-between;
       gap: 45px;
     }
+
+    &--size {
+      display: block;
+      max-width: 100%;
+      .opportunity__box-text {
+        max-width: 100%;
+      }
+      .opportunity__title {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .opportunity__box-description {
+        max-width: 100%;
+        p {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
 
   &__box-text {
@@ -92,6 +113,8 @@
     background: linear-gradient(180deg, #1523b7 0%, #275af3 100%);
     background-clip: text;
     max-width: 473px;
+    position: relative;
+      z-index: 3;
 
     @include _1024 {
       max-width: 100%;
@@ -102,17 +125,23 @@
     &.info-cards--title {
       margin-top: 0;
     }
+
+    &--implementation{
+      max-width: 100%;
+    }
   }
 
   &__box-description {
     max-width: 551px;
-    position: relative;
-    z-index: 3;
-    background: #fff;
-    color: black;
     @include _1024 {
       max-width: 100%;
       margin: 0;
+    }
+    strong,
+    p,
+    li {
+      position: relative;
+      z-index: 3;
     }
 
     ul {
@@ -121,6 +150,7 @@
       color: #fff;
       background-color: #0e0e0e;
     }
+
     &--single {
       margin-top: 45px;
       @include _1024 {
