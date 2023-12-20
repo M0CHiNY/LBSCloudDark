@@ -1,0 +1,65 @@
+.blog {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-auto-rows: minmax(
+      160px,
+      auto
+    ); /* Визначте мінімальну та максимальну висоту рядків */
+    gap: 12px;
+    row-gap: 34px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    place-self: center;
+    position: relative;
+    z-index: 3;
+    max-width: 379px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+    min-height: 160px;
+    color: #fff;
+    padding-top: 32px;
+    padding-left: 48px;
+    padding-bottom: 16px;
+    padding-right: 26px;
+    @include _767 {
+      padding:20px;
+      padding-left: 15px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../images/detail/triangle.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 37px;
+      height: 35px;
+      top: -15px;
+      right: 5%;
+    }
+  }
+  &__title {
+    display: inline-block;
+    color: #fff;
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 22px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__reading-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #275af3;
+    span {
+      display: block;
+      text-align: right;
+    }
+  }
+}
