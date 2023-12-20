@@ -9,6 +9,20 @@
     }
   }
 
+  &__last-text {
+    position: relative;
+    max-width: 852px;
+    margin: 70px auto 0;
+    text-align: center;
+    z-index: 3;
+    @include _1024 {
+      margin-top: 30px;
+    }
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
   &--logistics {
     padding-top: 95px;
     @include _1024 {
@@ -18,12 +32,17 @@
     .time-box__item:nth-child(2) {
       padding-right: 80px;
 
-       @include _540 {
+      @include _540 {
         padding: 38px 15px 20px 15px;
       }
       .time-box__text {
         max-width: 100%;
       }
+    }
+  }
+  &--consulting {
+    .time-box__item {
+      min-height: 80px;
     }
   }
 }
@@ -105,7 +124,7 @@
 
   &__text {
     max-width: 401px;
-    
+
     @include _540 {
       max-width: 100%;
       font-size: 15px;

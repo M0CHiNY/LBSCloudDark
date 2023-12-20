@@ -28,6 +28,8 @@ const pages = [
   "consulting",
   "implementation",
   "support",
+  "partnership",
+  "mobile-app",
 ];
 // list pages
 const environment = require("./configuration/environment");
