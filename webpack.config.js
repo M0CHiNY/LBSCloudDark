@@ -27,6 +27,8 @@ const pages = [
   "business-analytics",
   "consulting",
   "implementation",
+  "blog",
+  "implementation",
   "support",
 ];
 // list pages

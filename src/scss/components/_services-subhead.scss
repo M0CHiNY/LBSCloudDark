@@ -12,6 +12,18 @@
     padding-top: 50px;
   }
 
+  &.blog {
+    z-index: 4;
+   .services-subhead__title {
+    color:#1523B7;
+   }
+   .services-subhead__description {
+    color:#000;
+    max-width: 500px;
+   }
+   padding-bottom: 50px;
+  }
+
   &__title {
     text-align: center;
     color: #fff;

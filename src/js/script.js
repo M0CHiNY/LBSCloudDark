@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // scroll
 
-  const scrollToTop = document.getElementById("up");
+  const scrollToTop = document.getElementById("up");  
 
   window.onscroll = function () {
     scroll();
