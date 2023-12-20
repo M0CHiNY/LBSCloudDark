@@ -30,6 +30,8 @@ const pages = [
   "blog",
   "implementation",
   "support",
+  "partnership",
+  "mobile-app",
 ];
 // list pages
 const environment = require("./configuration/environment");

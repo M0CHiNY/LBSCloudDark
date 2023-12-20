@@ -18,6 +18,13 @@
       margin-bottom: 68px;
       background-color: red;
     }
+    &--mobile-app {
+      max-width: 575px;
+      margin-bottom: 80px;
+      @include _1024 {
+        margin-bottom: 50px;
+      }
+    }
   }
 
   &__descr {
