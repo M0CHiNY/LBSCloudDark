@@ -27,7 +27,9 @@ const pages = [
   "business-analytics",
   "consulting",
   "implementation",
-  "blog"
+  "blog",
+  "implementation",
+  "support",
 ];
 // list pages
 const environment = require("./configuration/environment");
