@@ -17,63 +17,13 @@
   }
 
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 38px;
-    row-gap: 54px;
-
-    @include _1200 {
-      column-gap: 15px;
-      row-gap: 34px;
-    }
-    @include _1024 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include _767 {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    &--odoo {
-      @include _1156 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @include _834 {
-        display: block;
-      }
-    }
-    &--business-start {
-      .focuse__card.focuse__card--odoo {
-        width: 364px;
-        background-color: #1523b7;
-        min-height: 138px;
-        padding: 32px 20px 25px;
-        border-radius: 10px;
-        color: #fff;
-
-        strong{
-          display: block;
-          @include Roboto-700;
-          font-size: 15px;
-          text-align: center;
-        }
-
-        span {
-          display: block;
-          text-align: center;
-          @include Intro-400;
-          font-size: 24px;
-          margin-bottom: 7px;
-        }
-
-        p {
-          text-align: center;
-          @include Roboto-400;
-          font-size: 15px;
-        }
-      }
-    }
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   row-gap: 44px;
+   column-gap: 30px;
   }
+
   &__card {
     position: relative;
     max-width: 364px;
@@ -113,55 +63,27 @@
         margin-bottom: 10px;
       }
     }
+  }
 
-    &--odoo {
+  &__descr {
+    max-width: 302px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &--odoo {
+    .focuse__inner {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .focuse__card {
       width: 364px;
       padding: 32px 29px 10px 39px;
-
-      &:nth-child(4),
-      &:nth-child(5) {
-        grid-row: 2;
-        grid-column: span 2;
-        margin: 0 auto;
-
-        @include _1156 {
-          grid-row: auto;
-          grid-column: span 1;
-        }
-      }
-
-      &:nth-child(5) {
-        transform: translateX(-50%);
-
-        @include _1156 {
-          transform: translateX(0);
-          grid-column: span 2;
-          margin: 0 auto;
-        }
-      }
-
-      @include _1200 {
-        max-width: 364px;
-      }
-
-      @include _1156 {
-        margin: 0 auto;
-      }
-
-      @include _834 {
-        &:not(:last-child) {
-          margin-bottom: 30px;
-        }
-      }
 
       @include _398 {
         max-width: 310px;
       }
     }
-  }
-  &__descr {
-    max-width: 302px;
-    font-size: 15px;
-    text-align: center;
   }
 }

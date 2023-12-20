@@ -44,6 +44,23 @@
     .time-box__item {
       min-height: 80px;
     }
+    .your-time__wrap-text {
+      max-width: 930px;
+      margin: 0 auto 56px;
+      .your-time__title {
+        margin-bottom: 30px;
+      }
+      .your-time__first-text {
+        text-align: center;
+      }
+    }
+    .your-time__wrap-text + .time-box > .time-box__item {
+      background-color: #1523b7;
+      min-height: 146px;
+      .time-box__text > .time-box__caption + p {
+        margin-top: 10px;
+      }
+    }
   }
 }
 
