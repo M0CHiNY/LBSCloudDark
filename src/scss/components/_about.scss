@@ -126,6 +126,7 @@
       @include _767 {
         margin: 0 auto;
       }
+
       &:first-child {
         @include _767 {
           margin: 0 auto;
@@ -192,6 +193,17 @@
         @include _1024 {
           margin: 0 auto;
         }
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:first-child {
+        @include _1024 {
+          margin: 0 auto;
+        }
+      }
+      @include _1024 {
+        margin: 0 auto;
       }
     }
   }
