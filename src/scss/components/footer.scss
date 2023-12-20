@@ -12,17 +12,34 @@
     bottom: 0;
     z-index: 2;
   }
+
   &::before {
-    left: 36%
+    left: 36%;
   }
   &::after {
-    right: 36%
+    right: 36%;
   }
   @include _1399 {
     &::after,
     &::before {
       width: 0;
       height: 0;
+    }
+  }
+  &.blog {
+    background-color: #fff;
+    &::after,
+    &::before {
+      background: linear-gradient(0deg, #efefef 0%, #efefef 100%), #efefef;
+    }
+    .footer__socialnet-item {
+      background-color: #000;
+      color: #fff;
+    }
+    .footer__title,
+    .footer__nav a,
+    .footer__copyright {
+      color: #000;
     }
   }
 }
@@ -82,7 +99,7 @@
 .footer__elem {
   position: relative;
   z-index: 3;
-  color: #1523B7;
+  color: #1523b7;
   @include Intro-400;
   font-size: 20px;
   text-decoration: underline;
@@ -117,7 +134,7 @@
 .footer__socialnet-item {
   @include Intro-400;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   padding: 12px;
   color: #000;
   min-width: 60px;

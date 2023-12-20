@@ -6,6 +6,7 @@ import './inc-html.js';
 import './menu.js';
 import './swiper-custom.js';
 import './script.js';
+import './custom.js';
 
 
 
