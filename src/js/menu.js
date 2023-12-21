@@ -43,21 +43,6 @@ document.querySelectorAll(".nav-submenu, .nav-menu").forEach((submenu) => {
   });
 });
 
-// // footer submenu
-// document.addEventListener('DOMContentLoaded', function() {
-//   var submenuLinks = document.querySelectorAll('.footer__nav a');
-//   submenuLinks.forEach(function(link) {
-//     link.addEventListener('click', function(event) {
-//       var submenu = link.nextElementSibling;
-
-//       if (submenu && submenu.classList.contains('footer-submenu')) {
-//         event.preventDefault();
-//         event.stopPropagation();
-//         submenu.classList.toggle('active');
-//       }
-//     });
-//   });
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   function Accordion(el, multiple) {
