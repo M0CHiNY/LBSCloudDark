@@ -43,19 +43,53 @@ document.querySelectorAll(".nav-submenu, .nav-menu").forEach((submenu) => {
   });
 });
 
-// footer submenu
-document.addEventListener('DOMContentLoaded', function() {
-  var submenuLinks = document.querySelectorAll('.footer__nav a');
-  submenuLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      var submenu = link.nextElementSibling;
+// // footer submenu
+// document.addEventListener('DOMContentLoaded', function() {
+//   var submenuLinks = document.querySelectorAll('.footer__nav a');
+//   submenuLinks.forEach(function(link) {
+//     link.addEventListener('click', function(event) {
+//       var submenu = link.nextElementSibling;
 
-      if (submenu && submenu.classList.contains('footer-submenu')) {
-        event.preventDefault();
-        event.stopPropagation(); 
-        submenu.classList.toggle('active'); 
-      }
-    });
-  });
+//       if (submenu && submenu.classList.contains('footer-submenu')) {
+//         event.preventDefault();
+//         event.stopPropagation();
+//         submenu.classList.toggle('active');
+//       }
+//     });
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  function Accordion(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    // Перевірка, чи є елементи перед додаванням обробників подій
+    const links = this.el.querySelectorAll(".link");
+    if (links.length > 0) {
+      links.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          const next = link.nextElementSibling;
+          const parent = link.parentNode;
+          next.style.display =
+            next.style.display === "block" ? "none" : "block";
+          parent.classList.toggle("open");
+
+          if (!multiple) {
+            const siblings = parent.parentNode.children;
+            for (let i = 0; i < siblings.length; i++) {
+              const sibling = siblings[i];
+              if (sibling !== parent && sibling.classList.contains("open")) {
+                sibling.querySelector(".submenu").style.display = "none";
+                sibling.classList.remove("open");
+              }
+            }
+          }
+        });
+      });
+    }
+  }
+
+  const accordion = new Accordion(document.getElementById("accordion"), false);
 });
 
