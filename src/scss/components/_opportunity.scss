@@ -22,6 +22,7 @@
       margin-top: 50px;
     }
   }
+
   &__sub-text {
     max-width: 710px;
     text-align: center;
@@ -46,11 +47,9 @@
 
     &--first {
       margin-top: 45px;
-    }
-
-    &--mod-first {
-      justify-content: space-between;
-      gap: 45px;
+      @include _1024 {
+        margin-top: 0;
+      }
     }
 
     &--size {
@@ -102,6 +101,12 @@
       @include _1024 {
         max-width: 850px;
       }
+      .opportunity__box-description {
+        margin-top: 45px;
+        @include _1024 {
+          margin-top: 0;
+        }
+      }
     }
   }
 
@@ -114,7 +119,7 @@
     background-clip: text;
     max-width: 473px;
     position: relative;
-      z-index: 3;
+    z-index: 3;
 
     @include _1024 {
       max-width: 100%;
@@ -122,14 +127,11 @@
       margin: 20px 0;
     }
 
-    &.info-cards--title {
-      margin-top: 0;
-    }
     span {
       color: #fff;
     }
 
-    &--implementation{
+    &--implementation {
       max-width: 100%;
     }
   }
@@ -154,11 +156,11 @@
       background-color: #0e0e0e;
     }
 
-    &--single {
-      margin-top: 45px;
-      @include _1024 {
-        margin-top: 0;
-      }
+    strong {
+      display: block;
+      font-size: 24px;
+      @include Roboto-700;
+      margin-bottom: 15px;
     }
   }
 
@@ -179,7 +181,7 @@
     }
 
     &::before {
-      content: url("../images/opportunity/rhombus.svg");
+      content: url("../images/opportunity/octagon.svg");
       position: absolute;
       width: 133px;
       height: 133px;
@@ -201,9 +203,10 @@
         content: url("../images/opportunity/hexagon.svg");
       }
     }
-    &--octagon {
+
+    &--rhombus {
       &::before {
-        content: url("../images/opportunity/octagon.svg");
+        content: url("../images/opportunity/rhombus.svg");
       }
     }
   }
@@ -221,24 +224,10 @@
       min-height: calc(316px + (316 - 190) * ((100vw - 540px) / (540 - 375)));
     }
   }
+
   &__subtext {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 50px;
   }
-  :has(.opportunity__subtext) {
-    padding-top: 50px;
-    @include _1024 {
-      padding-top: 25px;
-    }
-    @include _767 {
-      padding-top: 0;
-    }
-  }
-}
-
-.info-cards {
-  padding-top: 25px;
-  padding-bottom: 95px;
 }

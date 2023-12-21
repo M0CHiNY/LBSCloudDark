@@ -3,6 +3,7 @@
   @include _1024 {
     padding-top: 50px;
   }
+
   &__title {
     text-align: center;
     max-width: 832px;
@@ -11,41 +12,15 @@
       color: #fff;
     }
   }
-  &--logicals {
+
+  &--size-cart {
     padding-top: 110px;
     @include _1024 {
       padding-top: 50px;
     }
 
     .capabilities-card__box {
-      min-height: 174px;
-      
-      &::before {
-        content: url("../images/detail/pentagon-small.svg");
-        width: 59px;
-        height: 59px;
-        top: -25px;
-      }
-      &.capabilities-card__box--mod-size {
-        min-height: 248px;
-      }
-    }
-  }
-
-  &--marketing {
-    padding-top: 95px;
-    @include _1024 {
-      padding-top: 50px;
-    }
-    .capabilities-card__box {
-      min-height: 156px;
-    }
-  }
-  
-  &--integrations {
-    padding-bottom: 110px;
-    @include _1024 {
-      padding-bottom: 50px;
+      min-height: 180px;
     }
   }
 }
@@ -68,7 +43,7 @@
     position: relative;
     max-width: 546px;
     width: 100%;
-    min-height: 231px;
+    min-height: 234px;
     border-radius: 10px;
     background-color: #fff;
     padding: 48px 43px 15px 49px;
@@ -112,28 +87,6 @@
       display: block;
       @include Intro-400;
       text-align: center;
-    }
-    &--mod-size {
-      max-width: 364px;
-      min-height: 248px;
-      @include _1140 {
-        max-width: 546px;
-      }
-
-      @include _1024 {
-        max-width: 850px;
-      }
-    }
-  }
-  &--mod-col {
-    grid-template-columns: repeat(3, 1fr);
-
-    @include _1140 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include _1024 {
-      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

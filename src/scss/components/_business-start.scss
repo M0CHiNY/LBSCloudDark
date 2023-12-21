@@ -18,6 +18,7 @@
       margin-bottom: 68px;
       background-color: red;
     }
+    
     &--mobile-app {
       max-width: 575px;
       margin-bottom: 80px;
@@ -53,6 +54,16 @@
     border-radius: 10px;
     color: #fff;
     z-index: 3;
+
+    &::before {
+      content: url("../images/detail/pentagon-small.svg");
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      left: 33px;
+      top: -23px;
+      text-align: center;
+    }
 
     strong {
       display: block;

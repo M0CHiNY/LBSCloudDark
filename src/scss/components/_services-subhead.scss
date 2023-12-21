@@ -1,15 +1,20 @@
 .services-subhead {
   background-image: url("../images/subhead/service-subhead--gradient.png");
-  background-position: 25% center;
+  background-position: 25% 75%;
   background-repeat: no-repeat;
   position: relative;
   padding-top: 73px;
 
   @include _1246 {
-    background-position: top center;
+    background-position: top 75%;
   }
+  
   @include _1024 {
     padding-top: 50px;
+  }
+
+  @include _767 {
+    background-position: 75% 75%;
   }
 
   &.blog {
