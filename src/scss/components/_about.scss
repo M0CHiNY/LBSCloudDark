@@ -19,119 +19,45 @@
     @include _1024 {
       margin-bottom: 30px;
     }
+  }
 
-    &--benefit {
-      margin-bottom: 39px;
+  &--benefit {
+    margin-bottom: 39px;
+
+    .cards {
+      column-gap: 65px;
+      row-gap: 40px;
+    }
+
+    .cards > .card {
+      max-width: 340px;
     }
   }
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   row-gap: 89px;
-
+  column-gap: 35px;
   @include _1024 {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 35px;
+    row-gap: 50px;
   }
-  @include _767 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include _540 {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-    padding-bottom: 10px;
+
+  @include _590 {
+    row-gap: 40px;
   }
 
   .card {
     position: relative;
     text-align: center;
-    max-width: 214px;
-    margin: 0 auto;
+    max-width: 260px;
+    width: 100%;
     z-index: 3;
 
-    @include _1024 {
-      margin: 0;
-    }
-
-    @include _767 {
-      margin: 0 auto;
-    }
-
-    &:first-child,
-    &:nth-child(5) {
-      margin: 0;
-
-      @include _767 {
-        margin: 0 auto;
-      }
-    }
-
-    &:nth-child(3) {
-      @include _1024 {
-        margin: 0 auto;
-      }
-    }
-    &:nth-child(6) {
-      grid-column: span 2;
-      max-width: 375px;
-      @include _1024 {
-        margin: 0;
-        grid-column: span 1;
-      }
-      @include _540 {
-        margin: 0 auto;
-      }
-    }
-
-    &:nth-child(7) {
-      max-width: 302px;
-    }
-
-    &:nth-child(4) {
-      @include _1024 {
-        margin: 0;
-      }
-      @include _767 {
-        margin: 0 auto;
-      }
-    }
-
-    &--benefit {
-      max-width: 340px;
-      &:last-child {
-        margin: 0;
-        margin-left: auto;
-
-        @include _1024 {
-          grid-column: span 2;
-          margin: 0 auto;
-          max-width: 550px;
-        }
-
-        @include _767 {
-          grid-column: span 1;
-          max-width: 450px;
-        }
-      }
-      @include _1140 {
-        max-width: 300px;
-      }
-
-      @include _1024 {
-        max-width: 450px;
-      }
-
-      @include _767 {
-        margin: 0 auto;
-      }
-
-      &:first-child {
-        @include _767 {
-          margin: 0 auto;
-        }
-      }
+    @include _590 {
+      max-width: 350px;
     }
 
     &__box-img {
@@ -140,8 +66,8 @@
       height: 59px;
       margin: 0 auto 28px;
 
-      @include _540 {
-        margin-bottom: 15px;
+      @include _590 {
+        margin-bottom: 10px;
       }
       svg {
         text-align: center;
@@ -159,52 +85,8 @@
       @include Intro-400;
     }
   }
+
   p {
     font-size: 15px;
-  }
-
-  &--benefit {
-    grid-template-columns: repeat(3, 1fr);
-
-    @include _1024 {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 15px;
-    }
-
-    @include _767 {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-
-  &--services {
-    row-gap: 40px;
-    @include _540 {
-      row-gap: 20px;
-      padding-bottom: 10px;
-    }
-
-    .card {
-      max-width: 214px;
-      width: 100%;
-      grid-column: span 1;
-
-      &:nth-child(6) {
-        grid-column: span 1;
-        @include _1024 {
-          margin: 0 auto;
-        }
-      }
-
-      &:nth-child(4),
-      &:nth-child(5),
-      &:first-child {
-        @include _1024 {
-          margin: 0 auto;
-        }
-      }
-      @include _1024 {
-        margin: 0 auto;
-      }
-    }
   }
 }

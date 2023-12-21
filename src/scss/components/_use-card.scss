@@ -18,29 +18,16 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    @include _1140 {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 15px;
-      row-gap: 25px;
-    }
-
-    @include _767 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include _540 {
-      grid-template-columns: repeat(1, 1fr);
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   &__box {
     position: relative;
     z-index: 3;
     max-width: 234px;
-    @include _767 {
-      margin: 0 auto;
-    }
   }
 
   &__img {

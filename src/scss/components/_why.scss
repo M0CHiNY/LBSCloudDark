@@ -24,13 +24,18 @@
   gap: 61px;
   padding: 59px 66px 0;
 
-  @include _1024 {
-    flex-direction: column;
-    gap: 30px;
+  @include _1246 {
+    gap: 10px;
   }
 
-  @include _540 {
-    padding: 20px 30px 0;
+  @include _1200 {
+    flex-direction: column;
+    gap: 30px;
+    align-items:center;
+  }
+
+  @include _767 {
+    padding: 20px 0 30px;
   }
 
   @include _398 {
@@ -39,10 +44,14 @@
 
   &__inner {
     position: relative;
-    width: 497px;
-    @include _1024 {
-      width: 100%;
-      margin: 0 auto;
+    max-width: 497px;
+
+     @include _767 {
+      max-width: 400px;
+    }
+
+    @include _590 {
+      max-width: 360px;
     }
 
     &:first-child::before,
@@ -51,10 +60,10 @@
       position: absolute;
       width: 133px;
       height: 133px;
-      @include _540 {
+      @include _590 {
         transform: scale(0.5);
       }
-      @include _398 {
+      @include _540 {
         display: none;
       }
     }
@@ -62,13 +71,25 @@
     &:first-child::before {
       left: -66px;
       top: -59px;
+      @include _1246 {
+        left: -60px;
+      }
+      @include _767 {
+        left: -50px;  
+      }
     }
 
     &:last-child::after {
       right: -66px;
       bottom: 20%;
       transform: rotate(60deg);
-      @include _540 {
+      @include _1246 {
+        right: -60px;
+      }
+      @include _767 {
+        right: -50px;  
+      }
+      @include _590 {
         transform: scale(0.5);
       }
     }
@@ -80,9 +101,13 @@
     background-color: #fff;
     border-radius: 10px;
     z-index: 3;
+
+
     @include _540 {
       padding: 15px 5px 10px 20px;
     }
+
+
      &--odoo {
       padding-top: calc(120px + (120 - 50) * ((100vw - 1920px) / (1920 - 375)));
     }

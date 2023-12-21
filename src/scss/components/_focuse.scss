@@ -1,5 +1,8 @@
 .focuse {
   padding-top: 95px;
+  @include _1024 {
+    padding-top: 50px;
+  }
 
   &__title {
     max-width: 750px;
@@ -26,7 +29,7 @@
 
   &__card {
     position: relative;
-    max-width: 364px;
+    width: 364px;
     min-height: 154px;
     padding: 32px 63px 10px;
     background-color: #fff;
@@ -36,10 +39,6 @@
 
     @include _1140 {
       padding: 32px 22px 10px;
-    }
-    @include _1024 {
-      width: 100%;
-      margin: 0 auto;
     }
 
     &::before {
@@ -63,6 +62,17 @@
         margin-bottom: 10px;
       }
     }
+    strong {
+      display: block;
+      @include Roboto-700;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p{
+      font-size: 15px;
+      text-align: center;
+    }
   }
 
   &__descr {
@@ -71,19 +81,9 @@
     text-align: center;
   }
 
-  &--odoo {
-    .focuse__inner {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+  &--size-cart {
     .focuse__card {
-      width: 364px;
-      padding: 32px 29px 10px 39px;
-
-      @include _398 {
-        max-width: 310px;
-      }
+      min-height: 234px;
     }
   }
 }
