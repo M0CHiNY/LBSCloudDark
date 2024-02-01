@@ -1,91 +1,90 @@
-
 @mixin _398 {
   @media (max-width: 398px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _540 {
   @media (max-width: 540px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _590 {
   @media (max-width: 590px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _834 {
   @media (max-width: 834px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _767 {
   @media (max-width: 767px) {
-    @content; 
+    @content;
   }
 }
-
+@mixin _1023 {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
 @mixin _1024 {
   @media (max-width: 1024px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _1140 {
   @media (max-width: 1140px) {
-    @content; 
+    @content;
   }
 }
 @mixin _1156 {
   @media (max-width: 1156px) {
-    @content; 
+    @content;
   }
 }
 @mixin _1200 {
   @media (max-width: 1200px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _1246 {
   @media (max-width: 1246px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _1399 {
   @media (max-width: 1399px) {
-    @content; 
+    @content;
   }
 }
 
 @mixin _1400 {
   @media (max-width: 1400px) {
-    @content; 
+    @content;
   }
 }
-
 
 //Fonts family
 
 @mixin Roboto-400 {
-font-family: 'Roboto',
-   sans-serif;
- font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 @mixin Roboto-700 {
-font-family: 'Roboto',
-   sans-serif;
- font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 @mixin Intro-400 {
-font-family: 'Intro',
-   sans-serif;
- font-weight: 900;
+  font-family: "Intro", sans-serif;
+  font-weight: 900;
 }

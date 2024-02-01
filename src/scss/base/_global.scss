@@ -26,46 +26,8 @@ body {
   @include _767 {
     padding-top: 96px;
   }
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(0deg, #404040 0%, #404040 100%), #404040;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-  }
-
-  &::before {
-    left: 36%;
-  }
-
-  &::after {
-    right: 36%;
-  }
-
-  @include _1399 {
-    &::after,
-    &::before {
-      width: 0;
-      height: 0;
-    }
-  }
-  
-  &.main--white {
+  &--white {
     background-color: #fff;
-    &::after,
-    &::before {
-      background: linear-gradient(
-          0deg,
-          rgba(239, 239, 239, 0.5) 0%,
-          rgba(239, 239, 239, 0.5) 100%
-        ),
-        #efefef;
-    }
   }
 }
 

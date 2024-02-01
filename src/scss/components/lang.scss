@@ -25,14 +25,20 @@ select {
 select::-ms-expand {
   display: none;
 }
+
 /* Custom Select wrapper */
 .select {
   position: relative;
   display: flex;
-  width: 100px;
+  width: 90px;
   height: 44px;
   border-radius: 10px;
   overflow: hidden;
+  
+
+  @include _1023 {
+    margin-left: 16px;
+  }
 }
 /* Arrow */
 .select::after {
@@ -40,7 +46,7 @@ select::-ms-expand {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1em;
+  padding: 13px;
   background: linear-gradient(180deg, #1523B7 0%, #275AF3 100%);
   transition: .25s all ease;
   pointer-events: none;
@@ -48,5 +54,17 @@ select::-ms-expand {
 /* Transition */
 .select:hover::after {
   color: #0E0E0E;
+}
+
+.wp_inner .select{
+  @include _1023{
+    display: none;
+  }
+}
+.mobile__inner .select{
+  display: none;
+  @include _1023{
+    display: flex;
+  }
 }
 
