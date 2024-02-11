@@ -1,9 +1,147 @@
-<div id="header-ua"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-  <!-- Styles for elements with the class .subhead-description,
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo-ua.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm-ua.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management-ua.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance-ua.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production-ua.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-ua.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3-ua.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing-ua.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web-ua.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking-ua.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics-ua.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting-ua.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support-ua.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training-ua.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing-ua.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app-ua.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership-ua.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog-ua.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/index-ua.html">UA</option>
+                    <option value="index.html">ENG</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/index-ua.html">UA</option>
+                <option value="index.html">ENG</option>
+
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              зв'язатися з нами
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .subhead-description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -14,475 +152,683 @@
   - .subhead-description-xxlarge: width 857px
   - .subhead-description-medium2: width 500px
   - .subhead-description-xlarge2: width 710px -->
-  <section>
-    <div class="container">
-
-    </div>
-  </section>
-  <section class="subhead subhead--home">
-    <div class="subhead__inner subhead-gradient--home">
-      <div class="container">
-        <h1 class="subhead-title title subhead-title--width-small">
-          LBS Group
-        </h1>
-        <div class="subhead-description subhead-description-small">
-          <p>
-            LBS Group is about development and innovation. Our company is a lever of automation of your business
-            automation.
-            We bring your wildest ideas to life.
-          </p>
+      <section>
+        <div class="container">
 
         </div>
-        <a class="subhead-btn btn" href="#down">contact us</a>
-      </div>
-    </div>
-  </section>
+      </section>
+      <section class="subhead subhead--home">
+        <div class="subhead__inner subhead-gradient--home">
+          <div class="container">
+            <h1 class="subhead-title title subhead-title--width-small">
+              LBS Group
+            </h1>
+            <div class="subhead-description subhead-description-small">
+              <p>
+                LBS Group is about development and innovation. Our company is a lever of automation of your business
+                automation.
+                We bring your wildest ideas to life.
+              </p>
 
-  <section class="about">
-    <div class="container">
-      <h3 class="about__pre-title">About</h3>
-      <h2 class="about__title title">LBS Group</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>01</span>
-          </div>
-          <div class="card__text">
-            <p>
-              We create highly effective solutions and provide them to our
-              customers.
-            </p>
+            </div>
+            <a class="subhead-btn btn" href="#down">contact us</a>
           </div>
         </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>02</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Since 2014 we have gathered a highly qualified team of
-              talented developers, analysts, consultants and designers
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>03</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Our main goal is to provide scalable and reliable solutions.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>04</span>
-          </div>
-          <div class="card__text">
-            <p>Our experience and knowledge help us to achieve this.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>05</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Solutions created by LBS Group are ideal suitable for small,
-              medium and large businesses.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>06</span>
-          </div>
-          <div class="card__text">
-            <p>
-              We can automate business processes with the help of IT
-              technologies that are suitable for your organization,
-              regardless of whether your company has 5 employees or 500,
-              and find the most cost-effective way to get the right level
-              of support.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>07</span>
-          </div>
-          <div class="card__text">
-            <p>
-              In addition to developing and implementing comprehensive and
-              flexible CRM + ERP software solutions, we also advise on
-              issues in this area.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="why">
-    <div class="container">
-      <h3 class="why__pre-title">Why</h3>
-      <h2 class="why__title title">LBS Group?</h2>
-      <div class="card-list">
-        <div class="card-list__inner">
-          <div class="card-list__box">
-            <h3 class="card-list__caption">
-              Tasks solved <br />
-              by the system
-            </h3>
-            <ul class="why__list">
-              <li class="card-list__item">
-                Increase in the number of sales
-              </li>
-              <li class="card-list__item">
-                Automation of all business processes of the company
-              </li>
-              <li class="card-list__item">
-                Minimizing the risks of information loss
-              </li>
-              <li class="card-list__item">
-                Optimization of costs and the production cycle
-              </li>
-              <li class="card-list__item">
-                Reliable storage of all company information
-              </li>
-              <li class="card-list__item">
-                Improvement of customer service
-              </li>
-              <li class="card-list__item">
-                Increasing the efficiency of employees
-              </li>
-              <li class="card-list__item">
-                Reducing the number of operations for collecting
-                information about the client
-              </li>
-            </ul>
+      <section class="about">
+        <div class="container">
+          <h3 class="about__pre-title">About</h3>
+          <h2 class="about__title title">LBS Group</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>01</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  We create highly effective solutions and provide them to our
+                  customers.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>02</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Since 2014 we have gathered a highly qualified team of
+                  talented developers, analysts, consultants and designers
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>03</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Our main goal is to provide scalable and reliable solutions.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>04</span>
+              </div>
+              <div class="card__text">
+                <p>Our experience and knowledge help us to achieve this.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>05</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Solutions created by LBS Group are ideal suitable for small,
+                  medium and large businesses.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>06</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  We can automate business processes with the help of IT
+                  technologies that are suitable for your organization,
+                  regardless of whether your company has 5 employees or 500,
+                  and find the most cost-effective way to get the right level
+                  of support.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>07</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  In addition to developing and implementing comprehensive and
+                  flexible CRM + ERP software solutions, we also advise on
+                  issues in this area.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card-list__inner">
-          <div class="card-list__box">
-            <h3 class="card-list__caption">
-              Advantageswhich the company receives
-            </h3>
-            <ul class="why__list">
-              <li class="card-list__item">
-                A flexible system of 11,000 modules
-              </li>
-              <li class="card-list__item">
-                Work "online" from anywhere in the world
-              </li>
-              <li class="card-list__item">Unique sales tools</li>
-              <li class="card-list__item">
-                Customer survey creation module Integration with Google
-                services in 2 clicks
-              </li>
-              <li class="card-list__item">
-                "Live" chat between "manager-client"
-              </li>
-              <li class="card-list__item">For marketing campaigns</li>
-              <li class="card-list__item">
-                And many more useful tools...
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
+      </section>
 
-  <section class="complex">
-    <div class="container">
-      <div class="complex__title-wrapper">
-        <h2 class="complex__title title">
-          COMPLEX SOLUTION FOR YOUR Industry
-        </h2>
-      </div>
-      <div class="complex-pagination">
-        <div class="complex-pagination__prev">
-          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="69" viewBox="0 0 72 69" fill="none">
-            <path
-              d="M30.1222 2.27051C33.627 -0.275933 38.373 -0.27593 41.8779 2.27051L67.2134 20.6778C70.7182 23.2243 72.1848 27.7379 70.8461 31.8582L61.1688 61.6418C59.83 65.7621 55.9905 68.5517 51.6582 68.5517H20.3418C16.0095 68.5517 12.17 65.7621 10.8312 61.6418L1.15393 31.8582C-0.18481 27.7379 1.28177 23.2243 4.78665 20.6778L30.1222 2.27051Z"
-              fill="url(#paint0_linear_202_179)" />
-            <defs>
-              <linearGradient id="paint0_linear_202_179" x1="36" y1="-2" x2="36" y2="76" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1523B7" />
-                <stop offset="1" stop-color="#275AF3" />
-              </linearGradient>
-            </defs>
-          </svg>
+      <section class="why">
+        <div class="container">
+          <h3 class="why__pre-title">Why</h3>
+          <h2 class="why__title title">LBS Group?</h2>
+          <div class="card-list">
+            <div class="card-list__inner">
+              <div class="card-list__box">
+                <h3 class="card-list__caption">
+                  Tasks solved <br />
+                  by the system
+                </h3>
+                <ul class="why__list">
+                  <li class="card-list__item">
+                    Increase in the number of sales
+                  </li>
+                  <li class="card-list__item">
+                    Automation of all business processes of the company
+                  </li>
+                  <li class="card-list__item">
+                    Minimizing the risks of information loss
+                  </li>
+                  <li class="card-list__item">
+                    Optimization of costs and the production cycle
+                  </li>
+                  <li class="card-list__item">
+                    Reliable storage of all company information
+                  </li>
+                  <li class="card-list__item">
+                    Improvement of customer service
+                  </li>
+                  <li class="card-list__item">
+                    Increasing the efficiency of employees
+                  </li>
+                  <li class="card-list__item">
+                    Reducing the number of operations for collecting
+                    information about the client
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-list__inner">
+              <div class="card-list__box">
+                <h3 class="card-list__caption">
+                  Advantageswhich the company receives
+                </h3>
+                <ul class="why__list">
+                  <li class="card-list__item">
+                    A flexible system of 11,000 modules
+                  </li>
+                  <li class="card-list__item">
+                    Work "online" from anywhere in the world
+                  </li>
+                  <li class="card-list__item">Unique sales tools</li>
+                  <li class="card-list__item">
+                    Customer survey creation module Integration with Google
+                    services in 2 clicks
+                  </li>
+                  <li class="card-list__item">
+                    "Live" chat between "manager-client"
+                  </li>
+                  <li class="card-list__item">For marketing campaigns</li>
+                  <li class="card-list__item">
+                    And many more useful tools...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="complex-pagination__next">
-          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="69" viewBox="0 0 72 69" fill="none">
-            <path
-              d="M41.8778 66.7295C38.373 69.2759 33.627 69.2759 30.1221 66.7295L4.78665 48.3222C1.28177 45.7757 -0.184804 41.2621 1.15394 37.1418L10.8312 7.35815C12.17 3.23792 16.0095 0.448329 20.3418 0.448329L51.6582 0.448332C55.9905 0.448332 59.83 3.23794 61.1688 7.35816L70.8461 37.1418C72.1848 41.2621 70.7182 45.7757 67.2134 48.3222L41.8778 66.7295Z"
-              fill="url(#paint0_linear_202_182)" />
-            <defs>
-              <linearGradient id="paint0_linear_202_182" x1="36" y1="71" x2="36" y2="-7" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1523B7" />
-                <stop offset="1" stop-color="#275AF3" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      <div class="swiper complex-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="complex-cart">
-              <!-- 
+      </section>
+
+      <section class="complex">
+        <div class="container">
+          <div class="complex__title-wrapper">
+            <h2 class="complex__title title">
+              COMPLEX SOLUTION FOR YOUR Industry
+            </h2>
+          </div>
+          <div class="complex-pagination">
+            <div class="complex-pagination__prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="69" viewBox="0 0 72 69" fill="none">
+                <path
+                  d="M30.1222 2.27051C33.627 -0.275933 38.373 -0.27593 41.8779 2.27051L67.2134 20.6778C70.7182 23.2243 72.1848 27.7379 70.8461 31.8582L61.1688 61.6418C59.83 65.7621 55.9905 68.5517 51.6582 68.5517H20.3418C16.0095 68.5517 12.17 65.7621 10.8312 61.6418L1.15393 31.8582C-0.18481 27.7379 1.28177 23.2243 4.78665 20.6778L30.1222 2.27051Z"
+                  fill="url(#paint0_linear_202_179)" />
+                <defs>
+                  <linearGradient id="paint0_linear_202_179" x1="36" y1="-2" x2="36" y2="76"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1523B7" />
+                    <stop offset="1" stop-color="#275AF3" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="complex-pagination__next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="69" viewBox="0 0 72 69" fill="none">
+                <path
+                  d="M41.8778 66.7295C38.373 69.2759 33.627 69.2759 30.1221 66.7295L4.78665 48.3222C1.28177 45.7757 -0.184804 41.2621 1.15394 37.1418L10.8312 7.35815C12.17 3.23792 16.0095 0.448329 20.3418 0.448329L51.6582 0.448332C55.9905 0.448332 59.83 3.23794 61.1688 7.35816L70.8461 37.1418C72.1848 41.2621 70.7182 45.7757 67.2134 48.3222L41.8778 66.7295Z"
+                  fill="url(#paint0_linear_202_182)" />
+                <defs>
+                  <linearGradient id="paint0_linear_202_182" x1="36" y1="71" x2="36" y2="-7"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1523B7" />
+                    <stop offset="1" stop-color="#275AF3" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper complex-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="complex-cart">
+                  <!-- 
                 size modifiers for the width of the text the card in bloclk complex-cart__inner 
                 width-big    -  width: 238px;
                 width-medium -  width: 225px;
                 width-small  -  width: 177px;
               -->
-              <div class="complex-cart__inner width-small">               
-                <h3 class="complex-cart__title">Manufacturing Companies</h3>
-                <p>This program will not allow you to sell goods that are not in stock. You will be able to easily
-                  maintain inventory and sales with automatic inventory adjustments and reports. Analysis online
-                  balances
-                  is the most convenient and efficient way to work with warehouses.</p>
+                  <div class="complex-cart__inner width-small">
+                    <h3 class="complex-cart__title">Manufacturing Companies</h3>
+                    <p>This program will not allow you to sell goods that are not in stock. You will be able to easily
+                      maintain inventory and sales with automatic inventory adjustments and reports. Analysis online
+                      balances
+                      is the most convenient and efficient way to work with warehouses.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="complex-cart">
-              <div class="complex-cart__inner width-big">
-                <h3 class="complex-cart__title">Professional <br> Services</h3>
-                <p>What do you need for successful online trading? A good website and a proven system sales management
-                  system. Do you need an effective platform with ready-made processes? CRM system helps any business to
-                  manage sales at any level, from attracting retail customers to closing large deals. Odoo is a platform
-                  that provides much more opportunities.</p>
+              <div class="swiper-slide">
+                <div class="complex-cart">
+                  <div class="complex-cart__inner width-big">
+                    <h3 class="complex-cart__title">Professional <br> Services</h3>
+                    <p>What do you need for successful online trading? A good website and a proven system sales
+                      management
+                      system. Do you need an effective platform with ready-made processes? CRM system helps any business
+                      to
+                      manage sales at any level, from attracting retail customers to closing large deals. Odoo is a
+                      platform
+                      that provides much more opportunities.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="complex-cart">
-              <div class="complex-cart__inner width-medium">
-                <h3 class="complex-cart__title">Project <br> Organizations</h3>
-                <p>One of the most important factors to look for when choosing a system is simplicity. Not every
-                  employee
-                  will want to understand a complex interface or sequence of operations. In addition, it significantly
-                  reduces productivity. Therefore, Odoo offers a simple and flexible modular system that everyone can
-                  handle. Odoo system is designed to manage all departments and business processes. Thanks to it you
-                  will
-                  will be able to manage internal and external projects of your company.</p>
+              <div class="swiper-slide">
+                <div class="complex-cart">
+                  <div class="complex-cart__inner width-medium">
+                    <h3 class="complex-cart__title">Project <br> Organizations</h3>
+                    <p>One of the most important factors to look for when choosing a system is simplicity. Not every
+                      employee
+                      will want to understand a complex interface or sequence of operations. In addition, it
+                      significantly
+                      reduces productivity. Therefore, Odoo offers a simple and flexible modular system that everyone
+                      can
+                      handle. Odoo system is designed to manage all departments and business processes. Thanks to it you
+                      will
+                      will be able to manage internal and external projects of your company.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="complex-cart">
-              <div class="complex-cart__inner width-medium">
-                <h3 class="complex-cart__title">RetailOnline <br> Trading</h3>
-                <p>What do you need for successful online trading? A good website and a proven system sales management
-                  system. Do you need an effective platform with ready-made processes? CRM system helps any business to
-                  manage sales at any level, from attracting retail customers to closing large deals. Odoo is a platform
-                  that provides much more opportunities.</p>
+              <div class="swiper-slide">
+                <div class="complex-cart">
+                  <div class="complex-cart__inner width-medium">
+                    <h3 class="complex-cart__title">RetailOnline <br> Trading</h3>
+                    <p>What do you need for successful online trading? A good website and a proven system sales
+                      management
+                      system. Do you need an effective platform with ready-made processes? CRM system helps any business
+                      to
+                      manage sales at any level, from attracting retail customers to closing large deals. Odoo is a
+                      platform
+                      that provides much more opportunities.</p>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="complex-cart">
+                  <div class="complex-cart__inner">
+                    <h3 class="complex-cart__title">Manufacturing Companies</h3>
+                    <p>This program will not allow you to sell goods that are not in stock. You will be able to easily
+                      maintain inventory and sales with automatic inventory adjustments and reports. Analysis online
+                      balances
+                      is the most convenient and efficient way to work with warehouses.</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="complex-cart">
-              <div class="complex-cart__inner">
-              <h3 class="complex-cart__title">Manufacturing Companies</h3>
-              <p>This program will not allow you to sell goods that are not in stock. You will be able to easily
-                maintain inventory and sales with automatic inventory adjustments and reports. Analysis online
-                balances
-                is the most convenient and efficient way to work with warehouses.</p>
+        </div>
+      </section>
+
+
+      <div class="container">
+        <div class="opportunity__box">
+          <div class="opportunity__box-text">
+            <h2 class="opportunity__title title">
+              Why CRM and ERP implementation has a positive impact on the
+              company's work.
+            </h2>
+            <div class="opportunity__box-description">
+              <p>
+                The trouble of our time is the race for the client. It is
+                difficult to surprise with unique offers. В reality - they
+                are almost gone! Very rarely someone comes up with something
+                new and truly unique. But what can really pleasantly
+                surprise is the level of service. Better - one grateful
+                customer than 10 "dragged by the ears". Because the client
+                who liked everything will definitely will come back and even
+                recommend you to friends. Due to the fact that the service
+                process is automated, the speed increases and time spent on
+                the technical part is reduced. Also, the need for new staff
+                is reduced to a minimum.
+              </p>
             </div>
+          </div>
+          <div class="opportunity__box-img">
+            <img class="opportunity__img" src="images/opportunity/page-1/1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="opportunity__box">
+          <div class="opportunity__box-text opportunity__box-text--reverse">
+            <h2 class="opportunity__title title info-cards--title">
+              LBS: manage your company easily and efficiently
+            </h2>
+            <div class="opportunity__box-description">
+              <p>CRM is a tool that shapes the policy of the company as a
+                whole. In the first place in it is the client.</p>
+              <p>It does not matter how large your business is. But it is important not
+                only automation of customer relationships, but also how
+                great your desire to improve the quality of of work and
+                optimize your business. If you are aiming at development -
+                the software will help you in this. Odoo has many offers
+                that can be customized according to your business needs. To
+                manage your company through CRM+ERP, you only need the
+                Internet. You will be able to observe all the processes
+                taking place in the company from any device wherever you are
+                wherever you are.
+              </p>
             </div>
           </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-    <div class="container">
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">
-            Why CRM and ERP implementation has a positive impact on the
-            company's work.
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              The trouble of our time is the race for the client. It is
-              difficult to surprise with unique offers. В reality - they
-              are almost gone! Very rarely someone comes up with something
-              new and truly unique. But what can really pleasantly
-              surprise is the level of service. Better - one grateful
-              customer than 10 "dragged by the ears". Because the client
-              who liked everything will definitely will come back and even
-              recommend you to friends. Due to the fact that the service
-              process is automated, the speed increases and time spent on
-              the technical part is reduced. Also, the need for new staff
-              is reduced to a minimum.
-            </p>
+          <div class="opportunity__box-img">
+            <img class="opportunity__img" src="images/opportunity/page-1/2.jpg" alt="" />
           </div>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-1/1.jpg" alt="" />
-        </div>
       </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title info-cards--title">
-            LBS: manage your company easily and efficiently
-          </h2>
-          <div class="opportunity__box-description">
-            <p>CRM is a tool that shapes the policy of the company as a
-              whole. In the first place in it is the client.</p>
-            <p>It does not matter how large your business is. But it is important not
-              only automation of customer relationships, but also how
-              great your desire to improve the quality of of work and
-              optimize your business. If you are aiming at development -
-              the software will help you in this. Odoo has many offers
-              that can be customized according to your business needs. To
-              manage your company through CRM+ERP, you only need the
-              Internet. You will be able to observe all the processes
-              taking place in the company from any device wherever you are
-              wherever you are.
-            </p>
+
+
+      <section class="use-product">
+        <div class="container">
+          <div class="use-product__wrap">
+            <div class="use-product__box">
+              <h2 class="use-product__title title">
+                Odoo Is Used By More Than 50 000 Companies
+              </h2>
+              <img class="use-product__img" src="images/use-product-1.jpg" alt="use-product" />
+            </div>
+            <div class="use-product__box">
+              <h2 class="use-product__title title">
+                Odoo <br> Integrates With All Systems
+              </h2>
+              <img class="use-product__img" src="images/use-product-2.jpg" alt="use-product" />
+            </div>
           </div>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-1/2.jpg" alt="" />
+      </section>
+
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__title">
+          Contact Us UA
+        </div>
+
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
+          </div>
+        </div>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo-ua.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm-ua.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management-ua.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance-ua.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production-ua.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics-ua.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3-ua.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing-ua.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web-ua.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking-ua.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics-ua.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting-ua.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support-ua.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training-ua.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing-ua.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app-ua.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership-ua.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog-ua.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
+
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo-ua.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm-ua.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management-ua.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance-ua.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production-ua.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-ua.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3-ua.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing-ua.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web-ua.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking-ua.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics-ua.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting-ua.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support-ua.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training-ua.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing-ua.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app-ua.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership-ua.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog-ua.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end mobile menu -->
+
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-    </div>
-  
-
-  <section class="use-product">
-    <div class="container">
-      <div class="use-product__wrap">
-        <div class="use-product__box">
-          <h2 class="use-product__title title">
-            Odoo Is Used By More Than 50 000 Companies
-          </h2>
-          <img class="use-product__img" src="images/use-product-1.jpg" alt="use-product" />
-        </div>
-        <div class="use-product__box">
-          <h2 class="use-product__title title">
-            Odoo <br> Integrates With All Systems
-          </h2>
-          <img class="use-product__img" src="images/use-product-2.jpg" alt="use-product" />
-        </div>
-      </div>
-    </div>
-  </section> 
-
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
-        </div>
-      </div>
-    </div>
-  </section> 
-
-  <div id="footer-ua"></div>
+    </footer>
   </div>
-</main>
-<script src="js/libs/jolty-libs.js"></script>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,147 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-  <!-- Styles for elements with the class .subhead-description,
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/production.html">ENG</option>
+                    <option value="/production-ua.html">UA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/production.html">ENG</option>
+                <option value="/production-ua.html">UA</option>
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .subhead-description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -14,179 +152,393 @@
   - .subhead-description-xxlarge: width 853px
   - .subhead-description-medium2: width 500px
   - .subhead-description-xlarge2: width 710px -->
-  <section class="subhead subhead--other">
-    <div class="subhead__inner subhead-gradient--blue">
+      <section class="subhead subhead--other">
+        <div class="subhead__inner subhead-gradient--blue">
+          <div class="container">
+            <h1 class="subhead-title subhead-title--width-small">
+              Production
+            </h1>
+            <div class="subhead-description subhead-description-xxlarge">
+              <p>
+                If you own a production and have a goal to increase profits, then at first glance it seems that you need
+                to
+                start producing more. But if you think about it, it is not only this factor leads to the main goal.
+              </p>
+              <p>LBS is ready to share with you a tool that can increase the productivity and profit of your company</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="opportunity">
+        <div class="container">
+          <div class="opportunity__box opportunity__box--first">
+            <div class="opportunity__box-text opportunity__box-text--single">
+              <div class="opportunity__box-description">
+                <p>
+                  Material Requirements Planning (MRP) is a basic need of a manufacturing enterprise.
+                </p>
+                <p>We can not allow a situation where there is a sudden shortage of any materials or components. This
+                  will
+                  lead to the fact that the order will be executed untimely and, as a result, will severely damage the
+                  reputation of the enterprise. A surplus of raw materials will lead to irrational consumption of
+                  material
+                  resources, possibly there will be a need for additional storage.</p>
+                <p>How to prevent this? Fortunately, we live in a time when there is no need to keep a warehouse,
+                  production
+                  accounting manually, on paper cards. But despite the fact that such a system gives a lot of mistakes,
+                  many
+                  enterprises still use such systems to this day. In the time of technology development, such systems
+                  can be
+                  abandoned.</p>
+                <p>What is MRP-system?</p>
+                <p>This is a production resource planning system</p>
+                <p>It is a separate but synchronized module of the Odoo platform.</p>
+                <p>
+                  Accounting and providing the enterprise with the necessary materials and components is the main task
+                  of the
+                  program, which it copes with perfectly. It automatically regulates the warehouse, balances, expenses
+                  and
+                  receipts, so you will always have everything under control. Finally, you will forget about incidents
+                  when
+                  there is a lack of necessary elements or basic materials for production.</p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-7/1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="focuse">
+        <div class="container">
+          <h2 class="focuse__title title">
+            MRP Controls
+          </h2>
+          <div class="focuse__inner">
+            <div class="focuse__card">
+              <span>01</span>
+              <p class="focuse__descr">Warehouse</p>
+            </div>
+            <div class="focuse__card">
+              <span>02</span>
+              <p class="focuse__descr">Calculation of the need for raw materials and materials</p>
+            </div>
+            <div class="focuse__card">
+              <span>03</span>
+              <p class="focuse__descr">
+                Transport routes
+              </p>
+            </div>
+            <div class="focuse__card">
+              <span>04</span>
+              <p class="focuse__descr">Cost of equipment</p>
+            </div>
+            <div class="focuse__card">
+              <span>05</span>
+              <p class="focuse__descr">Procurement budget planning (automatic)</p>
+            </div>
+            <div class="focuse__card">
+              <span>06</span>
+              <p class="focuse__descr">Accounting of the warehouse and other divisions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="opportunity__first-title title">Benefits</h2>
+          <div class="opportunity__box opportunity__box--first">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">
+                Plan production rationally and efficiently
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  All production operations are planned and controlled by the system. Setting tasks based on the results
+                  of
+                  orders and plans, visual control of the results of analysis on diagrams - everything is available in
+                  one
+                  system thanks to automation. This helps to see gaps in the supply of warehouse or production and not
+                  to
+                  miss anything
+                </p>
+                <p>
+                  Data on orders, sales, as well as plans and forecasts of demand, will contribute to optimal production
+                  planning.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">Odoo is a flexible<br> system</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  There are no more restrictions in anything. Moreover, with our system you can make changes. It is
+                  possible
+                  to adjust schedules, plans, tasks and even goals operations. In the Odoo system, it is possible to
+                  make
+                  changes depending on your needs.
+                </p>
+                <p>You can also modify the interface of receiving information. Charts, lists, calendar tables and more -
+                  choose what is most convenient for you.</p>
+                <p>The main thing is to follow the path of planning both in production and in the timing of orders.</p>
+                <p>
+                  Only in this case the system determines the lack of any resources, which allows you to respond to it
+                  in a
+                  timely manner.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">
+                Production <br> analysis
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Production is directly related to the warehouse.
+                </p>
+                <p>With the MRP system, you are calm for the warehouse and for each stage of production. The system
+                  integrates these two sectors and monitors the status of each of them at the planning level.</p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
-        <h1 class="subhead-title subhead-title--width-small">
-          Production
-        </h1>
-        <div class="subhead-description subhead-description-xxlarge">
-          <p>
-            If you own a production and have a goal to increase profits, then at first glance it seems that you need to
-            start producing more. But if you think about it, it is not only this factor leads to the main goal.
-          </p>
-          <p>LBS is ready to share with you a tool that can increase the productivity and profit of your company</p>
+        <div class="footer__title">
+          Contact Us UA
         </div>
-      </div>
-  </section>
 
- <section class="opportunity">
-  <div class="container">
-    <div class="opportunity__box opportunity__box--first">
-      <div class="opportunity__box-text opportunity__box-text--single">
-        <div class="opportunity__box-description">
-          <p>
-            Material Requirements Planning (MRP) is a basic need of a manufacturing enterprise.
-          </p>
-          <p>We can not allow a situation where there is a sudden shortage of any materials or components. This will
-            lead to the fact that the order will be executed untimely and, as a result, will severely damage the
-            reputation of the enterprise. A surplus of raw materials will lead to irrational consumption of material
-            resources, possibly there will be a need for additional storage.</p>
-          <p>How to prevent this? Fortunately, we live in a time when there is no need to keep a warehouse, production
-            accounting manually, on paper cards. But despite the fact that such a system gives a lot of mistakes, many
-            enterprises still use such systems to this day. In the time of technology development, such systems can be
-            abandoned.</p>
-          <p>What is MRP-system?</p>
-          <p>This is a production resource planning system</p>
-          <p>It is a separate but synchronized module of the Odoo platform.</p>
-          <p>
-            Accounting and providing the enterprise with the necessary materials and components is the main task of the
-            program, which it copes with perfectly. It automatically regulates the warehouse, balances, expenses and
-            receipts, so you will always have everything under control. Finally, you will forget about incidents when
-            there is a lack of necessary elements or basic materials for production.</p>
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
+          </div>
+        </div>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
+
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end mobile menu -->
+
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-      <div class="opportunity__box-img">
-        <img class="opportunity__img" src="images/opportunity/page-7/1.jpg" alt="" />
-      </div>
-    </div>
+    </footer>
   </div>
-</section>
-
-  <section class="focuse">
-    <div class="container">
-      <h2 class="focuse__title title">
-        MRP Controls
-      </h2>
-      <div class="focuse__inner">
-        <div class="focuse__card">
-          <span>01</span>
-          <p class="focuse__descr">Warehouse</p>
-        </div>
-        <div class="focuse__card">
-          <span>02</span>
-          <p class="focuse__descr">Calculation of the need for raw materials and materials</p>
-        </div>
-        <div class="focuse__card">
-          <span>03</span>
-          <p class="focuse__descr">
-            Transport routes
-          </p>
-        </div>
-        <div class="focuse__card">
-          <span>04</span>
-          <p class="focuse__descr">Cost of equipment</p>
-        </div>
-        <div class="focuse__card">
-          <span>05</span>
-          <p class="focuse__descr">Procurement budget planning (automatic)</p>
-        </div>
-        <div class="focuse__card">
-          <span>06</span>
-          <p class="focuse__descr">Accounting of the warehouse and other divisions</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="opportunity">
-    <div class="container">
-      <h2 class="opportunity__first-title title">Benefits</h2>
-      <div class="opportunity__box opportunity__box--first">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">
-            Plan production rationally and efficiently
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              All production operations are planned and controlled by the system. Setting tasks based on the results of
-              orders and plans, visual control of the results of analysis on diagrams - everything is available in one
-              system thanks to automation. This helps to see gaps in the supply of warehouse or production and not to
-              miss anything
-            </p>
-            <p>
-              Data on orders, sales, as well as plans and forecasts of demand, will contribute to optimal production
-              planning.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">Odoo is a flexible<br> system</h2>
-          <div class="opportunity__box-description">
-            <p>
-              There are no more restrictions in anything. Moreover, with our system you can make changes. It is possible
-              to adjust schedules, plans, tasks and even goals operations. In the Odoo system, it is possible to make
-              changes depending on your needs.
-            </p>
-            <p>You can also modify the interface of receiving information. Charts, lists, calendar tables and more -
-              choose what is most convenient for you.</p>
-            <p>The main thing is to follow the path of planning both in production and in the timing of orders.</p>
-            <p>
-              Only in this case the system determines the lack of any resources, which allows you to respond to it in a
-              timely manner.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">
-            Production <br> analysis
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              Production is directly related to the warehouse.
-            </p>
-            <p>With the MRP system, you are calm for the warehouse and for each stage of production. The system
-              integrates these two sectors and monitors the status of each of them at the planning level.</p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/3.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

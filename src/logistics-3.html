@@ -1,9 +1,146 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-  <!-- Styles for elements with the class .subhead-description,
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/logistics-3.html">ENG</option>
+                    <option value="/logistics-3-ua.html">UA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/logistics-3.html">ENG</option>
+                <option value="/logistics-3-ua.html">UA</option>
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .subhead-description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -14,156 +151,364 @@
   - .subhead-description-xxlarge: width 853px
   - .subhead-description-medium2: width 500px
   - .subhead-description-xlarge2: width 710px -->
-  <section class="subhead subhead--other">
-    <div class="subhead__inner subhead-gradient--blue">
+      <section class="subhead subhead--other">
+        <div class="subhead__inner subhead-gradient--blue">
+          <div class="container">
+            <h1 class="subhead-title subhead-title--width-small">
+              POS terminals
+            </h1>
+            <div class="subhead-description subhead-description-medium2">
+              <p>Do you want to increase the speed and quality of customer service with the help of automation!? The
+                productivity of your employees will increase significantly thanks to the POS Odoo system. We offer
+                convenient, reliable and affordable for user software, which has many more advantages.</p>
+              <p>Using our software maximizes your opportunities.</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="opportunity__first-title title">Versatility And Simplicity</h2>
+          <div class="opportunity__box opportunity__box--first">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">Flexible and <br> affordable software</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Flexible and affordable software that works perfectly online on any hardware and anywhere in the
+                  world.
+                  any hardware and anywhere in the world.
+                </p>
+                <p>
+                  Thanks to integration with accounting and warehouse, you no longer need to download data and create
+                  separate reports. The system is designed so that when making sales, information about the state of the
+                  warehouse and revenue automatically changes. Long unloading of information is a thing of the past.
+                  From
+                  now on, statistics and all data on sales are available online You can also transfer data on paper,
+                  issue
+                  checks to customers or invoices to suppliers, because the system provides printing of invoices and
+                  invoices.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">Work on any equipment</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Now your customers do not have to spend time waiting, because POS Odoo quickly copes with the tasks.
+                </p>
+                <p>
+                  It functions perfectly on any device thanks to its flexibility. It works equally well: on a terminal,
+                  tablet, iPad, laptop, personal computer, phone. POS is compatible with barcode scanners, various types
+                  of
+                  printers, commodity electronic scales and other commercial and technological equipment.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="your-time  your-time--logistics">
+        <div class="container">
+          <h2 class="your-time__title title">POS Odoo - Fast And <br> Productive</h2>
+          <div class="time-box">
+            <div class="time-box__item">
+              <div class="time-box__text">
+                <p>
+                  The program has a simple and modern interface, pleasant for perception. It does not have to rack your
+                  brains, and all commands are carried out intuitively.
+                </p>
+              </div>
+            </div>
+            <div class="time-box__item">
+              <div class="time-box__text">
+                <p>
+                  Customers are no longer forced to wait long. You can open several checks in the system simultaneously,
+                  regardless of the field of activity. This function is simply necessary in shops and restaurants.
+                </p>
+              </div>
+            </div>
+            <div class="time-box__item time-box__item--mod-full">
+              <div class="time-box__text">
+                <h3 class="time-box__caption">
+                  The quick search system reduces the service time for each customer.
+                </h3>
+                <p>
+                  Regardless of whether you search the catalog or scan barcodes - you get information about the product
+                  instantly
+                  Automation will be effective: in cafes, pubs, restaurants, snack bars (fast food, pizzeria), shops,
+                  etc.
+                  And the control panel is easily configured to the needs of your business. In just one click you will
+                  have
+                  access to information:
+                </p>
+                <ul>
+                  <li>about the remains of products in the warehouse;</li>
+                  <li>cash register status (expense, income) without long reports;</li>
+                  <li>reports with detailed analysis;</li>
+                  <li>invoices, invoices.</li>
+                </ul>
+                <p>For catering establishments, special functions are configured that simplify the work of the staff.
+                  For
+                  example, the composition of a dish, cocktail, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="container">
-        <h1 class="subhead-title subhead-title--width-small">
-          POS terminals
-        </h1>
-        <div class="subhead-description subhead-description-medium2">
-          <p>Do you want to increase the speed and quality of customer service with the help of automation!? The
-            productivity of your employees will increase significantly thanks to the POS Odoo system. We offer
-            convenient, reliable and affordable for user software, which has many more advantages.</p>
-          <p>Using our software maximizes your opportunities.</p>
+        <div class="opportunity__box opportunity__box--mod-first">
+          <div class="opportunity__box-text opportunity__box-text--single">
+            <h2 class="opportunity__title title">Integration</h2>
+            <div class="opportunity__box-description opportunity__box-description--single">
+              <p>
+                The main secret of productive work is the integration of POS with all modules. For example, integration
+                with
+                a warehouse will allow you to assess stocks at any time.
+              </p>
+              <p>If you need to make applications to suppliers, you do not have to look for invoices, go through a lot
+                of
+                papers or meaningless tables.</p>
+              <p>One click and the data is already in front of you. For a chain of stores - this is a great opportunity
+                redirect the customer to another point of sale, in the absence of goods on site.</p>
+            </div>
+          </div>
+          <div class="opportunity__box-img">
+            <img class="opportunity__img" src="images/opportunity/page-5/2.jpg" alt="" />
+          </div>
         </div>
       </div>
-  </section>
 
-  <section class="opportunity">
-    <div class="container">
-      <h2 class="opportunity__first-title title">Versatility And Simplicity</h2>
-      <div class="opportunity__box opportunity__box--first">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">Flexible and <br> affordable software</h2>
-          <div class="opportunity__box-description">
-            <p>
-              Flexible and affordable software that works perfectly online on any hardware and anywhere in the world.
-              any hardware and anywhere in the world.
-            </p>
-            <p>
-              Thanks to integration with accounting and warehouse, you no longer need to download data and create
-              separate reports. The system is designed so that when making sales, information about the state of the
-              warehouse and revenue automatically changes. Long unloading of information is a thing of the past. From
-              now on, statistics and all data on sales are available online You can also transfer data on paper, issue
-              checks to customers or invoices to suppliers, because the system provides printing of invoices and
-              invoices.
-            </p>
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
           </div>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">Work on any equipment</h2>
-          <div class="opportunity__box-description">
-            <p>
-              Now your customers do not have to spend time waiting, because POS Odoo quickly copes with the tasks.
-            </p>
-            <p>
-              It functions perfectly on any device thanks to its flexibility. It works equally well: on a terminal,
-              tablet, iPad, laptop, personal computer, phone. POS is compatible with barcode scanners, various types of
-              printers, commodity electronic scales and other commercial and technological equipment.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/3.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="your-time  your-time--logistics">
-    <div class="container">
-      <h2 class="your-time__title title">POS Odoo - Fast And <br> Productive</h2>
-      <div class="time-box">
-        <div class="time-box__item">
-          <div class="time-box__text">
-            <p>
-              The program has a simple and modern interface, pleasant for perception. It does not have to rack your
-              brains, and all commands are carried out intuitively.
-            </p>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__title">
+          Contact Us UA
+        </div>
+
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
           </div>
         </div>
-        <div class="time-box__item">
-          <div class="time-box__text">
-            <p>
-              Customers are no longer forced to wait long. You can open several checks in the system simultaneously,
-              regardless of the field of activity. This function is simply necessary in shops and restaurants.
-            </p>
-          </div>
-        </div>
-        <div class="time-box__item time-box__item--mod-full">
-          <div class="time-box__text">
-            <h3 class="time-box__caption">
-              The quick search system reduces the service time for each customer.
-            </h3>
-            <p>
-              Regardless of whether you search the catalog or scan barcodes - you get information about the product
-              instantly
-              Automation will be effective: in cafes, pubs, restaurants, snack bars (fast food, pizzeria), shops, etc.
-              And the control panel is easily configured to the needs of your business. In just one click you will have
-              access to information:
-            </p>
-            <ul>
-              <li>about the remains of products in the warehouse;</li>
-              <li>cash register status (expense, income) without long reports;</li>
-              <li>reports with detailed analysis;</li>
-              <li>invoices, invoices.</li>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
+
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog.html">blog</a>
+              </li>
             </ul>
-            <p>For catering establishments, special functions are configured that simplify the work of the staff. For
-              example, the composition of a dish, cocktail, etc.</p>
-          </div>
+          </nav>
         </div>
-      </div>
-    </div>
-  </section>
+        <!-- end mobile menu -->
 
-  <div class="container">
-    <div class="opportunity__box opportunity__box--mod-first">
-      <div class="opportunity__box-text opportunity__box-text--single">
-        <h2 class="opportunity__title title">Integration</h2>
-        <div class="opportunity__box-description opportunity__box-description--single">
-          <p>
-            The main secret of productive work is the integration of POS with all modules. For example, integration with
-            a warehouse will allow you to assess stocks at any time.
-          </p>
-          <p>If you need to make applications to suppliers, you do not have to look for invoices, go through a lot of
-            papers or meaningless tables.</p>
-          <p>One click and the data is already in front of you. For a chain of stores - this is a great opportunity
-            redirect the customer to another point of sale, in the absence of goods on site.</p>
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-      <div class="opportunity__box-img">
-        <img class="opportunity__img" src="images/opportunity/page-5/2.jpg" alt="" />
-      </div>
-    </div>
+    </footer>
   </div>
-
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

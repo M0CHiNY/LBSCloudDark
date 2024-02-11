@@ -1,4 +1,4 @@
-// import Swiper JS
+// // import Swiper JS
 import Swiper from "swiper/bundle";
 
 // Section team start

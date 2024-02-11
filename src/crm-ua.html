@@ -1,9 +1,147 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-  <!-- Styles for elements with the class .subhead-description,
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo-ua.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm-ua.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management-ua.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance-ua.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production-ua.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-ua.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3-ua.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing-ua.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web-ua.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking-ua.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics-ua.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting-ua.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support-ua.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training-ua.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing-ua.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app-ua.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership-ua.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog-ua.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/crm-ua.html">UA</option>
+                    <option value="/crm.html">ENG</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/crm-ua.html">UA</option>
+                <option value="/crm.html">ENG</option>
+
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              зв'язатися з нами
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .subhead-description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -14,339 +152,540 @@
   - .subhead-description-xxlarge: width 857px
   - .subhead-description-medium2: width 500px
   - .subhead-description-xlarge2: width 710px -->
-  <section class="subhead subhead--other">
-    <div class="subhead__inner subhead-gradient--blue">
+      <section class="subhead subhead--other">
+        <div class="subhead__inner subhead-gradient--blue">
+          <div class="container">
+            <h1 class="subhead-title subhead-title--width-small">
+              CRM system
+            </h1>
+            <div class="subhead-description subhead-description-large">
+              <p>
+                What is the secret of successful companies? Developing companies can no longer imagine business without
+                a
+                CRM
+                system.</p>
+              <p>
+                Automation is guaranteed to increase productivity and raise the level of the company on the market. In
+                order
+                to reach more audience - you need to give more to give. Give in terms of service, because in the Odoo
+                system,
+                the client is the main value.
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section class="focuse">
+        <div class="container">
+          <h2 class="focuse__title title">
+            Focus On Priority Tasks!WITH ODOO CRM,
+            <span>IT'S EASY. THE PLATFORM LETS YOU:</span>
+          </h2>
+          <div class="focuse__inner">
+            <div class="focuse__card">
+              <span>01</span>
+              <p class="focuse__descr">Increase sales and demand for the company's services</p>
+            </div>
+            <div class="focuse__card">
+              <span>02</span>
+              <p class="focuse__descr">Attract more customers</p>
+            </div>
+            <div class="focuse__card">
+              <span>03</span>
+              <p class="focuse__descr">
+                To create a positive reputation of the company, due to the
+                quality of service
+              </p>
+            </div>
+            <div class="focuse__card">
+              <span>04</span>
+              <p class="focuse__descr">Increase the average check and cross-sell</p>
+            </div>
+            <div class="focuse__card">
+              <span>05</span>
+              <p class="focuse__descr">Conduct analysis and make forecasts</p>
+            </div>
+            <div class="focuse__card">
+              <span>06</span>
+              <p class="focuse__descr">Control and manage all divisions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="opportunity__first-title title">Benefits</h2>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">
+                Guide the customer through the sales funnel
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  The system monitors the customer journey - from the
+                  beginning to the purchase. You get a complete picture of
+                  what stage the customer is at. Thanks to this, you can
+                  predict his actions and work on problematic moments. And in
+                  the future you will focus on the most important aspects.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">Don't Lose <br> Contacts</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Whether you collect data about customers or suppliers, the
+                  system automatically accumulates and sorts data into
+                  storages. You no longer need to do it manually. All
+                  information from e-mail newsletters, order forms,
+                  subscriptions - is storedautomatically and replenishes your
+                  database with e-mail addresses and phone numbers.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">
+                Guide the customer through the sales funnel
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  The system monitors the customer journey - from the
+                  beginning to the purchase. You get a complete picture of
+                  what stage the customer is at. Thanks to this, you can
+                  predict his actions and work on problematic moments. And in
+                  the future you will focus on the most important aspects.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">Control and <br> manage</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  With the help of the system you can control communication
+                  with the client at all levels. Make mailings, calls, make
+                  appointments, make commercial offers to your customers, etc.
+                  Also, information, notes and all data are in one database.
+                  The system stores a client card with all the data on it.
+                  When a manager receives an incoming call from a client who
+                  has already been served in the company, the system
+                  automatically gives out all the data, which allows the
+                  manager, focusing on the history relationship with the
+                  client, to make him a special or promotional offer that he
+                  will surely be interested in. For the manager to call the
+                  client, you will need to make just one click. In the same
+                  place communication history is stored here
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">Save your time</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Automation and competent planning - saves more time for the
+                  implementation of more global tasks. Our system displays
+                  current offers, new messages and expected profit. Thanks to
+                  this, you will have access to a complete picture of future
+                  actions.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="your-time">
+        <div class="container">
+          <h2 class="your-time__title title">Save your time</h2>
+          <div class="time-box">
+            <div class="time-box__item">
+              <h3 class="time-box__caption">
+                Integration with social networks.
+              </h3>
+              <div class="time-box__text">
+                <p>
+                  It is known that integration speeds up and simplifies work
+                  processes. Integration of crm with social networks allows
+                  you to automatically save all customer data.
+                </p>
+              </div>
+            </div>
+            <div class="time-box__item">
+              <h3 class="time-box__caption">Integration with email</h3>
+              <div class="time-box__text">
+                <p>
+                  Easily sort incoming emails by relevant departments,
+                  employees or operations, as well as mark important messages.
+                </p>
+              </div>
+            </div>
+            <div class="time-box__item">
+              <h3 class="time-box__caption">Integration with accounting</h3>
+              <div class="time-box__text">
+                <p>
+                  If we talk about the financial department and accounting,
+                  then everything becomes simple and obvious. You do not have
+                  to move data manually.
+                </p>
+              </div>
+            </div>
+            <div class="time-box__item">
+              <h3 class="time-box__caption">
+                Integration with external services
+              </h3>
+              <div class="time-box__text">
+                <p>
+                  Odoo easily integrates with other applications. Now you do
+                  not need to open dozens of windows - all on one platform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about about--benefit">
+        <!--the about--benefit class is designed to modify cards - instead of 4 cards, 3 cards are placed in the row -->
+        <div class="container">
+          <h2 class="about__title about__title--benefit title">Benefits</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>01</span>
+              </div>
+              <div class="card__text">
+                <h3 class="card__caption">Generate leads easily</h3>
+                <p>
+                  It is very easy to analyze leads from advertising campaigns,
+                  newsletters and website in CRM. Deleting duplicates is now
+                  easy and fast, because the system finds them automatically.
+                  Analysis of advertising campaigns will allow you to navigate
+                  the situation, understand why you should to devote more time
+                  and how to avoid mistakes in the future.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>02</span>
+              </div>
+              <div class="card__text">
+                <h3 class="card__caption">
+                  Follow the internal <br />
+                  calendar of the company
+                </h3>
+                <p>
+                  It will allow you to control employees and find out how
+                  effective they are inworking hours. You can also see their
+                  schedule: scheduled meetings, phonecalls that need to be
+                  made - everything is available in one table
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>03</span>
+              </div>
+              <div class="card__text">
+                <h3 class="card__caption">
+                  Keep records <br />
+                  at any level
+                </h3>
+                <p>
+                  In such areas as production and warehouse it is impossible
+                  to do without a global accounting system accounting and work
+                  at the same time productively. But CRM - provides this unit
+                  with all the necessary functions. With the system, you will
+                  optimize data processing, be able to make calculations when
+                  the formation of orders, display balances Integration with
+                  the financial department will allow you to receive invoices
+                  and make payments, without leaving the system
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
-        <h1 class="subhead-title subhead-title--width-small">
-          CRM system
-        </h1>
-        <div class="subhead-description subhead-description-large">
-          <p>
-            What is the secret of successful companies? Developing companies can no longer imagine business without a
-            CRM
-            system.</p>
-          <p>
-            Automation is guaranteed to increase productivity and raise the level of the company on the market. In order
-            to reach more audience - you need to give more to give. Give in terms of service, because in the Odoo
-            system,
-            the client is the main value.
-          </p>
+        <div class="footer__title">
+          Contact Us UA
         </div>
-      </div>
-  </section>
 
-  <section class="focuse">
-    <div class="container">
-      <h2 class="focuse__title title">
-        Focus On Priority Tasks!WITH ODOO CRM,
-        <span>IT'S EASY. THE PLATFORM LETS YOU:</span>
-      </h2>
-      <div class="focuse__inner">
-        <div class="focuse__card">
-          <span>01</span>
-          <p class="focuse__descr">Increase sales and demand for the company's services</p>
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
+          </div>
         </div>
-        <div class="focuse__card">
-          <span>02</span>
-          <p class="focuse__descr">Attract more customers</p>
-        </div>
-        <div class="focuse__card">
-          <span>03</span>
-          <p class="focuse__descr">
-            To create a positive reputation of the company, due to the
-            quality of service
-          </p>
-        </div>
-        <div class="focuse__card">
-          <span>04</span>
-          <p class="focuse__descr">Increase the average check and cross-sell</p>
-        </div>
-        <div class="focuse__card">
-          <span>05</span>
-          <p class="focuse__descr">Conduct analysis and make forecasts</p>
-        </div>
-        <div class="focuse__card">
-          <span>06</span>
-          <p class="focuse__descr">Control and manage all divisions</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo-ua.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm-ua.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management-ua.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance-ua.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production-ua.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics-ua.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3-ua.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing-ua.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web-ua.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking-ua.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics-ua.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting-ua.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support-ua.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training-ua.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing-ua.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app-ua.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership-ua.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog-ua.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
 
-  <section class="opportunity">
-    <div class="container">
-      <h2 class="opportunity__first-title title">Benefits</h2>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">
-            Guide the customer through the sales funnel
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              The system monitors the customer journey - from the
-              beginning to the purchase. You get a complete picture of
-              what stage the customer is at. Thanks to this, you can
-              predict his actions and work on problematic moments. And in
-              the future you will focus on the most important aspects.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">Don't Lose <br> Contacts</h2>
-          <div class="opportunity__box-description">
-            <p>
-              Whether you collect data about customers or suppliers, the
-              system automatically accumulates and sorts data into
-              storages. You no longer need to do it manually. All
-              information from e-mail newsletters, order forms,
-              subscriptions - is storedautomatically and replenishes your
-              database with e-mail addresses and phone numbers.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">
-            Guide the customer through the sales funnel
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              The system monitors the customer journey - from the
-              beginning to the purchase. You get a complete picture of
-              what stage the customer is at. Thanks to this, you can
-              predict his actions and work on problematic moments. And in
-              the future you will focus on the most important aspects.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/3.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">Control and <br> manage</h2>
-          <div class="opportunity__box-description">
-            <p>
-              With the help of the system you can control communication
-              with the client at all levels. Make mailings, calls, make
-              appointments, make commercial offers to your customers, etc.
-              Also, information, notes and all data are in one database.
-              The system stores a client card with all the data on it.
-              When a manager receives an incoming call from a client who
-              has already been served in the company, the system
-              automatically gives out all the data, which allows the
-              manager, focusing on the history relationship with the
-              client, to make him a special or promotional offer that he
-              will surely be interested in. For the manager to call the
-              client, you will need to make just one click. In the same
-              place communication history is stored here
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/4.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">Save your time</h2>
-          <div class="opportunity__box-description">
-            <p>
-              Automation and competent planning - saves more time for the
-              implementation of more global tasks. Our system displays
-              current offers, new messages and expected profit. Thanks to
-              this, you will have access to a complete picture of future
-              actions.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/5.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- start mobile menu -->
 
-  <section class="your-time">
-    <div class="container">
-      <h2 class="your-time__title title">Save your time</h2>
-      <div class="time-box">
-        <div class="time-box__item">
-          <h3 class="time-box__caption">
-            Integration with social networks.
-          </h3>
-          <div class="time-box__text">
-            <p>
-              It is known that integration speeds up and simplifies work
-              processes. Integration of crm with social networks allows
-              you to automatically save all customer data.
-            </p>
-          </div>
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo-ua.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm-ua.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management-ua.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance-ua.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production-ua.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-ua.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3-ua.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing-ua.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web-ua.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking-ua.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics-ua.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting-ua.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support-ua.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training-ua.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing-ua.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app-ua.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership-ua.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog-ua.html">blog</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="time-box__item">
-          <h3 class="time-box__caption">Integration with email</h3>
-          <div class="time-box__text">
-            <p>
-              Easily sort incoming emails by relevant departments,
-              employees or operations, as well as mark important messages.
-            </p>
-          </div>
-        </div>
-        <div class="time-box__item">
-          <h3 class="time-box__caption">Integration with accounting</h3>
-          <div class="time-box__text">
-            <p>
-              If we talk about the financial department and accounting,
-              then everything becomes simple and obvious. You do not have
-              to move data manually.
-            </p>
-          </div>
-        </div>
-        <div class="time-box__item">
-          <h3 class="time-box__caption">
-            Integration with external services
-          </h3>
-          <div class="time-box__text">
-            <p>
-              Odoo easily integrates with other applications. Now you do
-              not need to open dozens of windows - all on one platform.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- end mobile menu -->
 
-  <section class="about about--benefit">
-    <!--the about--benefit class is designed to modify cards - instead of 4 cards, 3 cards are placed in the row -->
-    <div class="container">
-      <h2 class="about__title about__title--benefit title">Benefits</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>01</span>
-          </div>
-          <div class="card__text">
-            <h3 class="card__caption">Generate leads easily</h3>
-            <p>
-              It is very easy to analyze leads from advertising campaigns,
-              newsletters and website in CRM. Deleting duplicates is now
-              easy and fast, because the system finds them automatically.
-              Analysis of advertising campaigns will allow you to navigate
-              the situation, understand why you should to devote more time
-              and how to avoid mistakes in the future.
-            </p>
-          </div>
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
         </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>02</span>
-          </div>
-          <div class="card__text">
-            <h3 class="card__caption">
-              Follow the internal <br />
-              calendar of the company
-            </h3>
-            <p>
-              It will allow you to control employees and find out how
-              effective they are inworking hours. You can also see their
-              schedule: scheduled meetings, phonecalls that need to be
-              made - everything is available in one table
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>03</span>
-          </div>
-          <div class="card__text">
-            <h3 class="card__caption">
-              Keep records <br />
-              at any level
-            </h3>
-            <p>
-              In such areas as production and warehouse it is impossible
-              to do without a global accounting system accounting and work
-              at the same time productively. But CRM - provides this unit
-              with all the necessary functions. With the system, you will
-              optimize data processing, be able to make calculations when
-              the formation of orders, display balances Integration with
-              the financial department will allow you to receive invoices
-              and make payments, without leaving the system
-            </p>
-          </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+    </footer>
+  </div>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

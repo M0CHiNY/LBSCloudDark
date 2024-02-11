@@ -1,9 +1,146 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-   <!-- Styles for elements with the class .services-subhead__description,
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/implementation.html">ENG</option>
+                    <option value="/implementation-ua.html">UA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/implementation.html">ENG</option>
+                <option value="/implementation-ua.html">UA</option>
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .services-subhead__description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -13,133 +150,371 @@
   - .services-subhead__description--xlarge: width 806px
   - .services-subhead__description--xxlarge: width 1060px -->
 
-<section class="services-subhead">
-  <div class="container">
-    <h1 class="services-subhead__title title">Implementation</h1>
-    <div class="services-subhead__description services-subhead__description--xxlarge">
-      <p>
-        If your company has decided to automate internal business processes - this is absolutely the right decision. Every manager probably knows that the implementation of CRM system is an energy-consuming process.If your company has decided to automate internal business processes - this is absolutely the right decision. Every manager probably knows that the implementation of CRM system is an energy-consuming process. LBS Group specialists will tell you how to implement it correctly so that the company and employees felt minimal stress, and the changes made gave only a positive result. They will also help to carry out effective optimization and implementation.
-      </p>
-    </div>
-    <a class="services-subhead__btn btn" href="#down">contact us</a>
-  </div>
-</section>
- 
-    <div class="container">
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--single">
-          <div class="opportunity__box-description">
-            <strong>
-              To understand the benefits of Odoo in the enterprise, let's outline what the main tasks the systems perform
-            </strong>
-            <ul>
-              <li>Increase the level of customer service, which causes their loyalty;</li>
-              <li>Optimize interaction with them;</li>
-              <li>Collect and store personalized data about the client, which contributes to the implementation of optimization processes;</li>
-              <li>Effectively manage the marketing processes of the company;</li>
-              <li>Structuring and systematizing the work of employees;</li>
-              <li>Help to build a planning strategy;</li>
-              <li>Integrate the activities of departments;</li>
-              <li>Increase the number of sales or demand for services.</li>
-            </ul>
+      <section class="services-subhead">
+        <div class="container">
+          <h1 class="services-subhead__title title">Implementation</h1>
+          <div class="services-subhead__description services-subhead__description--xxlarge">
             <p>
-              This is just a small list of opportunities that implement the platform. This process is multi-stage, but with the right approach will not take much time and energy. However, it will require constant monitoring of company managers and specialists in CRM implementation.
+              If your company has decided to automate internal business processes - this is absolutely the right
+              decision. Every manager probably knows that the implementation of CRM system is an energy-consuming
+              process.If your company has decided to automate internal business processes - this is absolutely the right
+              decision. Every manager probably knows that the implementation of CRM system is an energy-consuming
+              process. LBS Group specialists will tell you how to implement it correctly so that the company and
+              employees felt minimal stress, and the changes made gave only a positive result. They will also help to
+              carry out effective optimization and implementation.
             </p>
           </div>
+          <a class="services-subhead__btn btn" href="#down">contact us</a>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/web/1.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  
-<section class="opportunity">
-    <div class="container">
-      <h2 class="opportunity__first-title title">Main Stages Of CRM And <br> ERP Implementation</h2>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title opportunity__title--implementation title">
-            LBS Group specialists go through every stage with your company - from analysis and planning, to implementation.
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-            Thanks to a professional approach at each stage, the work of the company and each employee will be optimized effectively, and the company's goals will be indescribably achieved (increase in sales or demand for services). And most importantly, the reputation of your company's reputation will increase significantly by improving the quality of service.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-2/1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">Planning And Goal Setting</h2>
-          <div class="opportunity__box-description">
-            <p>
-              The initial stage is carried out in order to argue and calculate the benefits. The task includes the work of specialists and managers of the company. It is important to to take into account the benefits, costs and payback period of the project. If the company is actively developing in the market, then most likely it makes sense to buy a program with wide functionality and the ability to embed additional modules. For a large and actively growing company, the standard package will not be enough. While for a small business or a new project, a set of of standard functions will be enough.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/1.jpg" alt="" />
-        </div>
-      </div>
-       <div class="opportunity__box  opportunity__box--size">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">
-            Collaborative work
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-             The initial stage is carried out in order to argue and calculate the benefits. The task includes the work of specialists and managers of the company. It is important to to take into account the benefits, costs and payback period of the project. If the company is actively developing in the market, then most likely it makes sense to buy a program with wide functionality and the ability to embed additional modules. For a large and actively growing company, the standard package will not be enough. While for a small business or a new project, a set of of standard functions will be enough.
-             </p>
-             <p>
-              While for a small business or a new project, a set of of standard functions will be enough. It consists not only in technical aspects, but also in the revision and redistribution organizational and functional structure. For this purpose, the work of both departments, divisions, and individual employees. Employees need to conduct training. In order to implement as efficiently as possible and with minimal resistance of the team, it is necessary to instill CRM culture comprehensively and systematically.
-             </p>
-              <p>
-                As for the development, the customer must provide a set of requirements and functions. The terms of reference should be clear and understandable. Developers will carry out system configuration, installation of additional modules, integration with other platforms and test the application. After agreeing on the program with customers, implementation is carried out in each department of the enterprise
-                You will need the help of specialists who can conduct an audit, adapt the system and select tools for your business needs. To carry out installation and provide professional technical support.
-              </p>        
-          </div>
-        </div>
-      </div> 
-       <div class="opportunity__box  opportunity__box--size">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">
-            Work On Implementation
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-             If the preparatory stages were carried out qualitatively, then problems with the implementation of the system will not arise. At the same stage, it is very important to create instructions, regulations and conduct training of employees to work in CRM+ERP. Training of all departments - the moment, for which you can not spare time and effort. <br>
-            Incompetence of employees can lead to the fact that to work in the new system they will start spending more time. This will lead to the opposite consequences - a decrease in productivity and service level. Over time, the picture will normalize, but still it is better to be as prepared as possible.
-             </p> 
-          </div>
-        </div>
-      </div> 
-    </div>
-  </section>
+      </section>
 
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
+      <div class="container">
+        <div class="opportunity__box">
+          <div class="opportunity__box-text opportunity__box-text--single">
+            <div class="opportunity__box-description">
+              <strong>
+                To understand the benefits of Odoo in the enterprise, let's outline what the main tasks the systems
+                perform
+              </strong>
+              <ul>
+                <li>Increase the level of customer service, which causes their loyalty;</li>
+                <li>Optimize interaction with them;</li>
+                <li>Collect and store personalized data about the client, which contributes to the implementation of
+                  optimization processes;</li>
+                <li>Effectively manage the marketing processes of the company;</li>
+                <li>Structuring and systematizing the work of employees;</li>
+                <li>Help to build a planning strategy;</li>
+                <li>Integrate the activities of departments;</li>
+                <li>Increase the number of sales or demand for services.</li>
+              </ul>
+              <p>
+                This is just a small list of opportunities that implement the platform. This process is multi-stage, but
+                with the right approach will not take much time and energy. However, it will require constant monitoring
+                of company managers and specialists in CRM implementation.
+              </p>
+            </div>
+          </div>
+          <div class="opportunity__box-img">
+            <img class="opportunity__img" src="images/opportunity/web/1.jpg" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="opportunity__first-title title">Main Stages Of CRM And <br> ERP Implementation</h2>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title opportunity__title--implementation title">
+                LBS Group specialists go through every stage with your company - from analysis and planning, to
+                implementation.
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Thanks to a professional approach at each stage, the work of the company and each employee will be
+                  optimized effectively, and the company's goals will be indescribably achieved (increase in sales or
+                  demand for services). And most importantly, the reputation of your company's reputation will increase
+                  significantly by improving the quality of service.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-2/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">Planning And Goal Setting</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  The initial stage is carried out in order to argue and calculate the benefits. The task includes the
+                  work of specialists and managers of the company. It is important to to take into account the benefits,
+                  costs and payback period of the project. If the company is actively developing in the market, then
+                  most likely it makes sense to buy a program with wide functionality and the ability to embed
+                  additional modules. For a large and actively growing company, the standard package will not be enough.
+                  While for a small business or a new project, a set of of standard functions will be enough.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box  opportunity__box--size">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">
+                Collaborative work
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  The initial stage is carried out in order to argue and calculate the benefits. The task includes the
+                  work of specialists and managers of the company. It is important to to take into account the benefits,
+                  costs and payback period of the project. If the company is actively developing in the market, then
+                  most likely it makes sense to buy a program with wide functionality and the ability to embed
+                  additional modules. For a large and actively growing company, the standard package will not be enough.
+                  While for a small business or a new project, a set of of standard functions will be enough.
+                </p>
+                <p>
+                  While for a small business or a new project, a set of of standard functions will be enough. It
+                  consists not only in technical aspects, but also in the revision and redistribution organizational and
+                  functional structure. For this purpose, the work of both departments, divisions, and individual
+                  employees. Employees need to conduct training. In order to implement as efficiently as possible and
+                  with minimal resistance of the team, it is necessary to instill CRM culture comprehensively and
+                  systematically.
+                </p>
+                <p>
+                  As for the development, the customer must provide a set of requirements and functions. The terms of
+                  reference should be clear and understandable. Developers will carry out system configuration,
+                  installation of additional modules, integration with other platforms and test the application. After
+                  agreeing on the program with customers, implementation is carried out in each department of the
+                  enterprise
+                  You will need the help of specialists who can conduct an audit, adapt the system and select tools for
+                  your business needs. To carry out installation and provide professional technical support.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="opportunity__box  opportunity__box--size">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">
+                Work On Implementation
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  If the preparatory stages were carried out qualitatively, then problems with the implementation of the
+                  system will not arise. At the same stage, it is very important to create instructions, regulations and
+                  conduct training of employees to work in CRM+ERP. Training of all departments - the moment, for which
+                  you can not spare time and effort. <br>
+                  Incompetence of employees can lead to the fact that to work in the new system they will start spending
+                  more time. This will lead to the opposite consequences - a decrease in productivity and service level.
+                  Over time, the picture will normalize, but still it is better to be as prepared as possible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__title">
+          Contact Us UA
+        </div>
+
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
+          </div>
+        </div>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
+
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end mobile menu -->
+
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

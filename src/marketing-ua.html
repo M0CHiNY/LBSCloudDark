@@ -1,10 +1,148 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
+<!DOCTYPE html>
+<html lang="ua">
 
-  <!-- Styles for elements with the class .subhead-description,
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo-ua.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm-ua.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management-ua.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance-ua.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production-ua.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-ua.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3-ua.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing-ua.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web-ua.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking-ua.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics-ua.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting-ua.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support-ua.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training-ua.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing-ua.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app-ua.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership-ua.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog-ua.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/marketing-ua.html">UA</option>
+                    <option value="/marketing.html">ENG</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/marketing-ua.html">UA</option>
+                <option value="/marketing.html">ENG</option>
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              зв'язатися з нами
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+
+      <!-- Styles for elements with the class .subhead-description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -15,154 +153,360 @@
   - .subhead-description-xxlarge: width 853px
   - .subhead-description-medium2: width 500px
   - .subhead-description-xlarge2: width 710px -->
-  <section class="subhead subhead--other">
-    <div class="subhead__inner subhead-gradient--blue">
+      <section class="subhead subhead--other">
+        <div class="subhead__inner subhead-gradient--blue">
+          <div class="container">
+            <h1 class="subhead-title subhead-title--width-small">
+              Marketing
+            </h1>
+            <div class="subhead-description subhead-description-medium2">
+              <p>
+                Do you want to effectively promote your website, brand, improve the quality of advertising campaigns or
+                do
+                you need a decent PR?
+              </p>
+              <p>
+                For comprehensive marketing there is Odoo. A system that combines all the necessary functions in one
+                system
+                and has simple management.</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="capabilities capabilities--size-cart">
+        <div class="container">
+          <h2 class="capabilities__title title">
+            Communication With Customers Is Important! <span>With The Help Of The Platform You Can</span>
+          </h2>
+          <ul class="capabilities-card">
+            <li class="capabilities-card__box">
+              <span>01</span>
+              <p>Manage mailing</p>
+            </li>
+            <li class="capabilities-card__box">
+              <span>02</span>
+              <p>Import subscriber and customer data</p>
+            </li>
+            <li class="capabilities-card__box">
+              <span>03</span>
+              <p>Create spectacular letters in the designer or use ready-made templates</p>
+            </li>
+            <li class="capabilities-card__box">
+              <span>04</span>
+              <p>Create events and polls</p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="opportunity__first-title title opportunity__title--medium">Conduct Mass Mailing Not Only With The
+            Purpose Of Selling Something.
+          </h2>
+          <div class="opportunity__box opportunity__box--first">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">Create events - attract more people</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  The platform has a great tool for creating events. Now you can automate many processes:
+                </p>
+                <ul>
+                  <li>- Publishing information about the event on the site;</li>
+                  <li>- Synchronization of the system with the site;</li>
+                  <li>- Printing and sending tickets;</li>
+                  <li>- Confirmation of participation;</li>
+                  <li>- Mailing to new participants;</li>
+                  <li>- Sending reminders about the event.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">Analytics in Odoot</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Analytics is the first step on the way to optimization. The activity of the unit without analytics -
+                  is
+                  working blindly. But users of the Odoo platform are not threatened by this. Integration of modules of
+                  the
+                  Odoo system allows you to get all the necessary data simply, in a few clicks
+                </p>
+                <p>
+                  Analyze with Odoo:
+                </p>
+                <ul>
+                  <li>- advertising campaigns;</li>
+                  <li>- ad effectiveness;</li>
+                  <li>- leads and confirmed orders;</li>
+                  <li>- user behavior on the site;</li>
+                  <li>- responses to mailing lists;</li>
+                  <li>- conduct a/b tests that significantly increase conversion.</li>
+                </ul>
+                <p>
+                  Remember that only after a thorough analysis, you can understand what you have shortcomings and
+                  correct
+                  them.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-5/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">Marketing research</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Now you can easily conduct testing, surveys, questionnaires with Odoo tools. The system has forms with
+                  an
+                  excellent user interface interface, thanks to which you:
+                </p>
+                <ul>
+                  <li>- can easily manage the tool;;</li>
+                  <li>- create a survey in a few clicks;</li>
+                  <li>- receive regular updates on the status of the survey;</li>
+                  <li>- will have access to the data collected from the results of the survey in a single database;</li>
+                  <li>- create forms for questionnaires with a unique design, even without special skills;</li>
+                  <li>- be able to evaluate statistics and results.</li>
+                </ul>
+                <p>With the Odoo automated system, the survey process is easy and efficient. And the number of attracted
+                  users will increase due to the modern approach.</p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
-        <h1 class="subhead-title subhead-title--width-small">
-          Marketing
-        </h1>
-        <div class="subhead-description subhead-description-medium2">
-          <p>
-            Do you want to effectively promote your website, brand, improve the quality of advertising campaigns or do
-            you need a decent PR?
-          </p>
-          <p>
-            For comprehensive marketing there is Odoo. A system that combines all the necessary functions in one system
-            and has simple management.</p>
+        <div class="footer__title">
+          Contact Us UA
         </div>
-      </div>
-  </section>
 
-  <section class="capabilities capabilities--size-cart">
-    <div class="container">
-      <h2 class="capabilities__title title">
-        Communication With Customers Is Important! <span>With The Help Of The Platform You Can</span>
-      </h2>
-      <ul class="capabilities-card">
-        <li class="capabilities-card__box">
-          <span>01</span>
-          <p>Manage mailing</p>
-        </li>
-        <li class="capabilities-card__box">
-          <span>02</span>
-          <p>Import subscriber and customer data</p>
-        </li>
-        <li class="capabilities-card__box">
-          <span>03</span>
-          <p>Create spectacular letters in the designer or use ready-made templates</p>
-        </li>
-        <li class="capabilities-card__box">
-          <span>04</span>
-          <p>Create events and polls</p>
-        </li>
-
-      </ul>
-    </div>
-  </section>
-
-  <section class="opportunity">
-    <div class="container">
-      <h2 class="opportunity__first-title title opportunity__title--medium">Conduct Mass Mailing Not Only With The Purpose Of Selling Something.
-      </h2>
-      <div class="opportunity__box opportunity__box--first">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">Create events - attract more people</h2>
-          <div class="opportunity__box-description">
-            <p>
-              The platform has a great tool for creating events. Now you can automate many processes:
-            </p>
-            <ul>
-              <li>- Publishing information about the event on the site;</li>
-              <li>- Synchronization of the system with the site;</li>
-              <li>- Printing and sending tickets;</li>
-              <li>- Confirmation of participation;</li>
-              <li>- Mailing to new participants;</li>
-              <li>- Sending reminders about the event.</li>
-            </ul>
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
           </div>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">Analytics in Odoot</h2>
-          <div class="opportunity__box-description">
-            <p>
-              Analytics is the first step on the way to optimization. The activity of the unit without analytics - is
-              working blindly. But users of the Odoo platform are not threatened by this. Integration of modules of the
-              Odoo system allows you to get all the necessary data simply, in a few clicks
-            </p>
-            <p>
-              Analyze with Odoo:
-            </p>
-            <ul>
-              <li>- advertising campaigns;</li>
-              <li>- ad effectiveness;</li>
-              <li>- leads and confirmed orders;</li>
-              <li>- user behavior on the site;</li>
-              <li>- responses to mailing lists;</li>
-              <li>- conduct a/b tests that significantly increase conversion.</li>
-            </ul>
-            <p>
-              Remember that only after a thorough analysis, you can understand what you have shortcomings and correct
-              them.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-5/2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">Marketing research</h2>
-          <div class="opportunity__box-description">
-            <p>
-              Now you can easily conduct testing, surveys, questionnaires with Odoo tools. The system has forms with an
-              excellent user interface interface, thanks to which you:
-            </p>
-            <ul>
-              <li>- can easily manage the tool;;</li>
-              <li>- create a survey in a few clicks;</li>
-              <li>- receive regular updates on the status of the survey;</li>
-              <li>- will have access to the data collected from the results of the survey in a single database;</li>
-              <li>- create forms for questionnaires with a unique design, even without special skills;</li>
-              <li>- be able to evaluate statistics and results.</li>
-            </ul>
-            <p>With the Odoo automated system, the survey process is easy and efficient. And the number of attracted
-              users will increase due to the modern approach.</p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/1.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo-ua.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm-ua.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management-ua.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance-ua.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production-ua.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics-ua.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3-ua.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing-ua.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web-ua.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking-ua.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics-ua.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting-ua.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support-ua.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training-ua.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing-ua.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app-ua.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership-ua.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog-ua.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
 
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo-ua.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm-ua.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management-ua.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance-ua.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production-ua.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-ua.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3-ua.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing-ua.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web-ua.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking-ua.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics-ua.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting-ua.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support-ua.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training-ua.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing-ua.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app-ua.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership-ua.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog-ua.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end mobile menu -->
+
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-    </div>
-  </section>
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+    </footer>
+  </div>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

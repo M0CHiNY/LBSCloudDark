@@ -1,9 +1,147 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-  <!-- Styles for elements with the class .subhead-description,
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo-ua.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm-ua.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management-ua.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance-ua.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production-ua.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-ua.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3-ua.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing-ua.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web-ua.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking-ua.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics-ua.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting-ua.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations-ua.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support-ua.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training-ua.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing-ua.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app-ua.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership-ua.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog-ua.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/project-management-ua.html">UA</option>
+                    <option value="project-management.html">ENG</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/project-management-ua.html">UA</option>
+                <option value="project-management.html">ENG</option>
+
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              зв'язатися з нами
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .subhead-description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -14,176 +152,385 @@
   - .subhead-description-xxlarge: width 857px
   - .subhead-description-medium2: width 500px
   - .subhead-description-xlarge2: width 710px -->
-  <section class="subhead subhead--other">
-    <div class="subhead__inner subhead-gradient--blue">
+      <section class="subhead subhead--other">
+        <div class="subhead__inner subhead-gradient--blue">
+          <div class="container">
+            <h1 class="subhead-title">
+              Project Management
+            </h1>
+            <div class="subhead-description subhead-description-large">
+              <p>
+                Is it realistic to control dozens of projects at the same time? With Odoo it is possible to perform even
+                twice as much and reach a new level of efficiency!
+              </p>
+              <p>
+                Odoo is a system for managing absolutely all departments and business processes. It helps to manage both
+                internal and external projects of the company.
+              </p>
+            </div>
+          </div>
+      </section>
+      <section class="use-card">
+        <div class="container">
+          <h2 class="use-card__title title">EASE OF USE <br> With <span>Odoo Projects You:</span></h2>
+          <ul class="use-card__list">
+            <li class="use-card__box">
+              <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
+              <p class="use-card__text">Reduce your<br> training time</p>
+            </li>
+            <li class="use-card__box">
+              <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
+              <p class="use-card__text">Quickly and intuitively master the interface</p>
+            </li>
+            <li class="use-card__box">
+              <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
+              <p class="use-card__text">Be able to effectively plan and control tasks</p>
+            </li>
+            <li class="use-card__box">
+              <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
+              <p class="use-card__text">Complete projects easier and faster</p>
+            </li>
+            <li class="use-card__box">
+              <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
+              <p class="use-card__text">The overall picture of the project will give an understanding of all its aspects
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="capabilities">
+        <div class="container">
+          <h2 class="capabilities__title title">Odoo Capabilities In Project<br> Management <span>In Fact, The Platform
+              Features Are Not Limited, But As An Example Here Are Some Of Them</span></h2>
+          <ul class="capabilities-card">
+            <li class="capabilities-card__box">
+              <span>01</span>
+              <p>Create tasks and distribute them. If any task needs to be divided into smaller projects (subtasks),
+                then
+                with the help of the system you can divide and fix them. And for their solution, employees can be
+                combined
+                into small subgroups.</p>
+            </li>
+            <li class="capabilities-card__box">
+              <span>02</span>
+              <p>The system is configured so that the color indicator can be used to understand whether the task
+                requires
+                your control. And regular alerts about the status during its execution allow you to always respond in
+                time
+                to react and make corrections. Wherever you are, you can always keep your finger on the pulse.</p>
+            </li>
+            <li class="capabilities-card__box">
+              <span>03</span>
+              <p>Even if the project manager changes, the work on the project will still be carried out in the usual
+                format.
+                The program saves all data, contacts and history. The new project manager will be able to view
+                correspondence, proposals, information about payments, agreements, etc</p>
+            </li>
+            <li class="capabilities-card__box">
+              <span>04</span>
+              <p>The system allows you to calculate the profitability of a deal or project at the initial planning
+                stage.
+                You will can rationally manage the budget, because the system will signal the slightest overspending
+                will
+                signal about the slightest overrun.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="opportunity">
+        <div class="container">
+          <h2 class="opportunity__first-title title">Benefits</h2>
+          <div class="opportunity__box opportunity__box--first">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">
+                Flexibility
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Odoo's modular architecture covers all departments of the company. Due to the fact that system is
+                  flexible
+                  and easily customizable to all your needs - it will meet any features of your business.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">Integration</h2>
+              <div class="opportunity__box-description">
+                <p>
+                  The project management system integrates with your e-mail, which allows you to instantly respond to
+                  customer questions and, based on this, create tasks for employees.
+                </p>
+                <p>The invoice is issued in a couple of clicks, because it is linked to the contract.</p>
+                <p>The invoice is issued on the basis of information about the project, costs and after analysis working
+                  hours.</p>
+                <p>
+                  Integration with the analytics system will allow you to see the employment of employees in a
+                  particular or
+                  another project, and if there is a need to redistribute the load. You will also will be able to detect
+                  errors in the workflow in a timely manner and correct them.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="opportunity__box">
+            <div class="opportunity__box-text opportunity__box-text--reverse">
+              <h2 class="opportunity__title title">
+                Collaborative<br> work
+              </h2>
+              <div class="opportunity__box-description">
+                <p>
+                  Teamwork has always brought more results. And with Odoo. it became available in real time:
+                </p>
+                <ul>
+                  <li>- discuss the project with the whole team;</li>
+                  <li>- discuss the project with the whole team;</li>
+                  <li>- suggest ideas, make edits and comments simultaneously with other users;</li>
+                  <li>- edit documents with the whole team;</li>
+                  <li>- communicate in chats and share documents;</li>
+                  <li>- raise communication histories;</li>
+                  <li>- form technical tasks and mark each performer with its own color;</li>
+                  <li>- prepare mass technical tasks;</li>
+                  <li>- record the necessary information</li>
+                </ul>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-4/3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
-        <h1 class="subhead-title">
-          Project Management
-        </h1>
-        <div class="subhead-description subhead-description-large">
-          <p>
-            Is it realistic to control dozens of projects at the same time? With Odoo it is possible to perform even
-            twice as much and reach a new level of efficiency!
-           </p>
-          <p>
-            Odoo is a system for managing absolutely all departments and business processes. It helps to manage both
-            internal and external projects of the company.
-          </p>
+        <div class="footer__title">
+          Contact Us UA
         </div>
-      </div>
-  </section>
-  <section class="use-card">
-    <div class="container">
-      <h2 class="use-card__title title">EASE OF USE <br> With <span>Odoo Projects You:</span></h2>
-      <ul class="use-card__list">
-        <li class="use-card__box">
-          <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
-          <p class="use-card__text">Reduce your<br> training time</p>
-        </li>
-        <li class="use-card__box">
-          <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
-          <p class="use-card__text">Quickly and intuitively master the interface</p>
-        </li>
-        <li class="use-card__box">
-          <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
-          <p class="use-card__text">Be able to effectively plan and control tasks</p>
-        </li>
-        <li class="use-card__box">
-          <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
-          <p class="use-card__text">Complete projects easier and faster</p>
-        </li>
-        <li class="use-card__box">
-          <img class="use-card__img" src="images/detail/pentagon-small.svg" alt="pentagon">
-          <p class="use-card__text">The overall picture of the project will give an understanding of all its aspects</p>
-        </li>
-      </ul>
-    </div>
-  </section>
 
-  <section class="capabilities">
-    <div class="container">
-      <h2 class="capabilities__title title">Odoo Capabilities In Project<br> Management <span>In Fact, The Platform
-          Features Are Not Limited, But As An Example Here Are Some Of Them</span></h2>
-      <ul class="capabilities-card">
-        <li class="capabilities-card__box">
-          <span>01</span>
-          <p>Create tasks and distribute them. If any task needs to be divided into smaller projects (subtasks), then
-            with the help of the system you can divide and fix them. And for their solution, employees can be combined
-            into small subgroups.</p>
-        </li>
-        <li class="capabilities-card__box">
-          <span>02</span>
-          <p>The system is configured so that the color indicator can be used to understand whether the task requires
-            your control. And regular alerts about the status during its execution allow you to always respond in time
-            to react and make corrections. Wherever you are, you can always keep your finger on the pulse.</p>
-        </li>
-        <li class="capabilities-card__box">
-          <span>03</span>
-          <p>Even if the project manager changes, the work on the project will still be carried out in the usual format.
-            The program saves all data, contacts and history. The new project manager will be able to view
-            correspondence, proposals, information about payments, agreements, etc</p>
-        </li>
-        <li class="capabilities-card__box">
-          <span>04</span>
-          <p>The system allows you to calculate the profitability of a deal or project at the initial planning stage.
-            You will can rationally manage the budget, because the system will signal the slightest overspending will
-            signal about the slightest overrun.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="opportunity">
-    <div class="container">
-      <h2 class="opportunity__first-title title">Benefits</h2>
-      <div class="opportunity__box opportunity__box--first">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">
-            Flexibility
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              Odoo's modular architecture covers all departments of the company. Due to the fact that system is flexible
-              and easily customizable to all your needs - it will meet any features of your business.
-            </p>
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
           </div>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">Integration</h2>
-          <div class="opportunity__box-description">
-            <p>
-              The project management system integrates with your e-mail, which allows you to instantly respond to
-              customer questions and, based on this, create tasks for employees.
-            </p>
-            <p>The invoice is issued in a couple of clicks, because it is linked to the contract.</p>
-            <p>The invoice is issued on the basis of information about the project, costs and after analysis working
-              hours.</p>
-            <p>
-              Integration with the analytics system will allow you to see the employment of employees in a particular or
-              another project, and if there is a need to redistribute the load. You will also will be able to detect
-              errors in the workflow in a timely manner and correct them.
-            </p>
-          </div>
-        </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="opportunity__box">
-        <div class="opportunity__box-text opportunity__box-text--reverse">
-          <h2 class="opportunity__title title">
-            Collaborative<br> work
-          </h2>
-          <div class="opportunity__box-description">
-            <p>
-              Teamwork has always brought more results. And with Odoo. it became available in real time:
-            </p>
-            <ul>
-              <li>- discuss the project with the whole team;</li>
-              <li>- discuss the project with the whole team;</li>
-              <li>- suggest ideas, make edits and comments simultaneously with other users;</li>
-              <li>- edit documents with the whole team;</li>
-              <li>- communicate in chats and share documents;</li>
-              <li>- raise communication histories;</li>
-              <li>- form technical tasks and mark each performer with its own color;</li>
-              <li>- prepare mass technical tasks;</li>
-              <li>- record the necessary information</li>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo-ua.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm-ua.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management-ua.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance-ua.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production-ua.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics-ua.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3-ua.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing-ua.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web-ua.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking-ua.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics-ua.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting-ua.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations-ua.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support-ua.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training-ua.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing-ua.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app-ua.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership-ua.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog-ua.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
+
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo-ua.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm-ua.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management-ua.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance-ua.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production-ua.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-ua.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2-ua.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3-ua.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing-ua.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web-ua.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking-ua.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics-ua.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting-ua.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations-ua.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support-ua.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training-ua.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing-ua.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app-ua.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership-ua.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog-ua.html">blog</a>
+              </li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-4/3.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- end mobile menu -->
 
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-    </div>
-  </section>
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+    </footer>
+  </div>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>

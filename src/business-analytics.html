@@ -1,9 +1,146 @@
-<div id="header"></div>
-<main class="main">
-  <a class="up-arrow" href="#" id="up">
-    <p>&#8593;</p>
-  </a>
-   <!-- Styles for elements with the class .services-subhead__description,
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index HTML</title>
+</head>
+
+<body>
+  <div class="container-big">
+    <header class="header">
+      <div class="containr-midle">
+        <div class="header__wrap">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="mob-nav" id="mob-nav">
+            <div data-ui-dialog-backdrop class="mob-nav-backdrop"></div>
+            <div data-ui-dialog-content class="mob-nav-content">
+              <button type="button" aria-label="Close" class="mob-nav-close" data-ui-dismiss>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <a class="header__logo header__logo--mobile" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <nav class="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a href="#">opportunities</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/odoo.html">Odoo</a>
+                      </li>
+                      <li>
+                        <a href="/crm.html">CRM system</a>
+                      </li>
+                      <li>
+                        <a href="/project-management.html">HR: Project Management</a>
+                      </li>
+                      <li>
+                        <a href="/finance.html">Finance and Accounting</a>
+                      </li>
+                      <li>
+                        <a href="/production.html">Production</a>
+                      </li>
+                      <li>
+                        <a href="/logistics.html">Logistics and Transport</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                      </li>
+                      <li>
+                        <a href="/logistics-3.html">POS terminals</a>
+                      </li>
+                      <li>
+                        <a href="/marketing.html">Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/web.html">Web & E-commerce</a>
+                      </li>
+                      <li>
+                        <a href="/banking.html">Automation of banking activities</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Integrations</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">services</a>
+                    <ul class="nav-submenu">
+                      <li>
+                        <a href="/business-analytics.html">Buisness analytics</a>
+                      </li>
+                      <li>
+                        <a href="/consulting.html">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="/integrations.html">Introduction</a>
+                      </li>
+                      <li>
+                        <a href="/support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="/user-training.html">User training</a>
+                      </li>
+                      <li>
+                        <a href="/outsourcing.html">Outsourcing</a>
+                      </li>
+                      <li>
+                        <a href="/mobile-app.html">Mobile app</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/partnership.html">partnership</a>
+                  </li>
+                  <li>
+                    <a href="/blog.html">blog</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mobile__inner">
+                <div class="select">
+                  <select onchange="window.location.href=this.value">
+                    <option value="/business-analytics.html">ENG</option>
+                    <option value="/business-analytics-ua.html">UA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" aria-label="Navigation" class="mob-nav-toggler" data-ui-toggle="mob-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.47 34.09" width="37.47" height="34.09"
+              class="w-4.5 h-auto stroke-current">
+              <line stroke-width="4" y1="2" x2="37.47" y2="2"></line>
+              <line stroke-width="4" y1="32.09" x2="37.47" y2="32.09"></line>
+              <line stroke-width="4" y1="17.04" x2="37.47" y2="17.04"></line>
+            </svg>
+          </button>
+          <div class="wp_inner">
+            <div class="select">
+              <select onchange="window.location.href=this.value">
+                <option value="/business-analytics.html">ENG</option>
+                <option value="/business-analytics-ua.html">UA</option>
+              </select>
+            </div>
+            <a class="header__btn btn header__btn--connect" href="#down">
+              contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <a class="up-arrow" href="#" id="up">
+        <p>&#8593;</p>
+      </a>
+      <!-- Styles for elements with the class .services-subhead__description,
   where each modifier class indicates the width size of the element.
   
   Classes:
@@ -13,306 +150,521 @@
   - .services-subhead__description--xlarge: width 806px
   - .services-subhead__description--xxlarge: width 1060px -->
 
-<section class="services-subhead">
-  <div class="container">
-    <h1 class="services-subhead__title title">Buisness analytics</h1>
-    <div class="services-subhead__description services-subhead__description--medium">
-      <p>
-        If you want to improve the quality and productivity of your company - automation of business processes is a great solution.
-      </p>
-    </div>
-    <a class="services-subhead__btn btn" href="#down">contact us</a>
-  </div>
-</section>
+      <section class="services-subhead">
+        <div class="container">
+          <h1 class="services-subhead__title title">Buisness analytics</h1>
+          <div class="services-subhead__description services-subhead__description--medium">
+            <p>
+              If you want to improve the quality and productivity of your company - automation of business processes is
+              a great solution.
+            </p>
+          </div>
+          <a class="services-subhead__btn btn" href="#down">contact us</a>
+        </div>
+      </section>
 
-<section class="business-start">
-  <div class="container">
-    <h2 class="business-start__title title">Business Analysis: Where To Start?</h2>
-    <div class="business-start__descr">
-     <p>
-      Before implementing any system, you need to determine what set of functions it should have. And understand the needs of the company. For these purposes, we conduct business analysis. Without a qualitative and in-depth analysis, business automation will not bring high results. There will be no optimization of the company and its direction on the course of development.        
-      </p>
-      <p>The Analysis Is Carried Out According To A Certain Scheme And Its Task Is To</p>
-    </div>
-    <div class="business-start__inner">
-      <div class="business-start__card">
-          <span>01</span>
-          <p>Identify the functions and capabilities of the company</p>
-      </div>
-      <div class="business-start__card">
-          <span>02</span>
-          <p>Add goals and objectives</p>
-      </div>
-      <div class="business-start__card">
-          <span>03</span>
-          <p>Find ways to achieve them and implement the process</p>
-      </div>
-      <div class="business-start__card">
-          <span>04</span>
-          <p>Identify the needs and possible options for interaction within the company</p>
-      </div>
-      <div class="business-start__card">
-          <span>05</span>
-          <p>Find external points and ways of interaction</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="business-start">
+        <div class="container">
+          <h2 class="business-start__title title">Business Analysis: Where To Start?</h2>
+          <div class="business-start__descr">
+            <p>
+              Before implementing any system, you need to determine what set of functions it should have. And understand
+              the needs of the company. For these purposes, we conduct business analysis. Without a qualitative and
+              in-depth analysis, business automation will not bring high results. There will be no optimization of the
+              company and its direction on the course of development.
+            </p>
+            <p>The Analysis Is Carried Out According To A Certain Scheme And Its Task Is To</p>
+          </div>
+          <div class="business-start__inner">
+            <div class="business-start__card">
+              <span>01</span>
+              <p>Identify the functions and capabilities of the company</p>
+            </div>
+            <div class="business-start__card">
+              <span>02</span>
+              <p>Add goals and objectives</p>
+            </div>
+            <div class="business-start__card">
+              <span>03</span>
+              <p>Find ways to achieve them and implement the process</p>
+            </div>
+            <div class="business-start__card">
+              <span>04</span>
+              <p>Identify the needs and possible options for interaction within the company</p>
+            </div>
+            <div class="business-start__card">
+              <span>05</span>
+              <p>Find external points and ways of interaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section class="opportunity">
-    <div class="container">
-      <div class="opportunity__box">
-        <div class="opportunity__box-text">
-          <h2 class="opportunity__title title">
-            How Is Automation <br> Happening?
+      <section class="opportunity">
+        <div class="container">
+          <div class="opportunity__box">
+            <div class="opportunity__box-text">
+              <h2 class="opportunity__title title">
+                How Is Automation <br> Happening?
+              </h2>
+              <div class="opportunity__box-description">
+                <strong>Identify and satisfy consumer needs</strong>
+                <p>
+                  At first glance it seems that everything is simple. But the result is different for everyone, because
+                  it depends on the competence of the specialist who is responsible for the case. LBS Group boldly
+                  relies on the company's business analysts. Our 100% confidence in the quality of services is backed by
+                  the professionalism of our staff specialists and their many years of experience.
+                </p>
+                <p>
+                  The first thing a business analyst does is to collect the necessary documents and information about
+                  the company.
+                  It is important that the specialist takes into account the goals and objectives of the customer.
+                </p>
+              </div>
+            </div>
+            <div class="opportunity__box-img">
+              <img class="opportunity__img" src="images/opportunity/page-3/2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="your-time">
+        <div class="container">
+          <h2 class="your-time__title title">
+            Why You Should Contact <br> LBS Group?
           </h2>
-          <div class="opportunity__box-description">
-            <strong>Identify and satisfy consumer needs</strong>
-            <p>
-            At first glance it seems that everything is simple. But the result is different for everyone, because it depends on the competence of the specialist who is responsible for the case. LBS Group boldly relies on the company's business analysts. Our 100% confidence in the quality of services is backed by the professionalism of our staff specialists and their many years of experience.
-            </p>
-            <p>
-              The first thing a business analyst does is to collect the necessary documents and information about the company.
-              It is important that the specialist takes into account the goals and objectives of the customer.
-            </p>
+          <div class="time-box">
+            <div class="time-box__item">
+              <div class="time-box__text">
+                <p>
+                  Enterprise automation is impossible without the implementation of web solutions. By solutions means
+                  not only a platform for system tasks, but also a set of functions and sequential steps of the company
+                  as a whole. Automation of these actions will provide a high level of of interaction with customers.
+                  This will give even more profit to the company, and, most importantly, will increase its authority due
+                  to the quality of service to each client separately.
+                </p>
+              </div>
+            </div>
+            <div class="time-box__item">
+              <div class="time-box__text">
+                <p>
+                  Automation of processes is a large amount of work on the analysis of activities. The result of the
+                  analysis specialists is not only in checking the workflow and collecting information about the
+                  company. First of all - identifying the needs of the client, and only then — setting tasks, specific
+                  goals that contribute to their solution.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="opportunity__box-img">
-          <img class="opportunity__img" src="images/opportunity/page-3/2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="your-time">
-    <div class="container">
-      <h2 class="your-time__title title">
-        Why You Should Contact <br> LBS Group?
-      </h2>
-      <div class="time-box">
-        <div class="time-box__item">
-          <div class="time-box__text">
-            <p>
-              Enterprise automation is impossible without the implementation of web solutions. By solutions means not only a platform for system tasks, but also a set of functions and sequential steps of the company as a whole. Automation of these actions will provide a high level of of interaction with customers. This will give even more profit to the company, and, most importantly, will increase its authority due to the quality of service to each client separately.
-            </p>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title">
+            Odoo system and LBS <br> Group specialists will <br>help business:
+          </h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>01</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Conduct a detailed business analysis, on the basis of which the platform will be implemented for
+                  development.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>02</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Improve project efficiency by automating processes.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>03</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Collect information about customers and manage it wisely.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>04</span>
+              </div>
+              <div class="card__text">
+                <p>Automate the sales<br> process.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>05</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Identify the needs of each client.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>06</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Improve the quality and speed <br> of service.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>07</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Manage the document flow of the company.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__box-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+                  <path
+                    d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
+                    fill="url(#paint0_linear_202_36)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1523B7" />
+                      <stop offset="1" stop-color="#275AF3" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span>08</span>
+              </div>
+              <div class="card__text">
+                <p>
+                  Keep internal records of prices, warehouse, etc.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="time-box__item">
-          <div class="time-box__text">
-            <p>            
-Automation of processes is a large amount of work on the analysis of activities. The result of the analysis specialists is not only in checking the workflow and collecting information about the company. First of all - identifying the needs of the client, and only then — setting tasks, specific goals that contribute to their solution.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-   <section class="about">
-    <div class="container">
-      <h2 class="about__title title">
-        Odoo system and LBS <br> Group specialists will <br>help business:
-      </h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>01</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Conduct a detailed business analysis, on the basis of which the platform will be implemented for development.
-            </p>
+      <section class="action" id="down">
+        <div class="container">
+          <div class="action__inner">
+            <div class="action__title title">Do you have a project or partnership?</div>
+            <form action="#" method="post" class="action__form">
+              <input class="action__input" type="text" placeholder="First and last name" />
+              <input class="action__input" type="text" placeholder="Phone number" />
+              <input class="action__input" type="text" placeholder="Email" />
+              <input class="action__input" type="text" placeholder="Company name" />
+              <button type="button" class="action__btn">ENTER</button>
+            </form>
+            <div class="action__agree">
+              I agree with LBS Group <a href="">Private policy</a>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>02</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Improve project efficiency by automating processes.
-            </p>
-          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__title">
+          Contact Us UA
         </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>03</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Collect information about customers and manage it wisely.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>04</span>
-          </div>
-          <div class="card__text">
-            <p>Automate the sales<br> process.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>05</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Identify the needs of each client.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>06</span>
-          </div>
-          <div class="card__text">
-            <p>
-             Improve the quality and speed <br> of service.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>07</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Manage the document flow of the company.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__box-img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-              <path
-                d="M20.6221 2.27051C24.127 -0.27593 28.873 -0.275931 32.3779 2.27051L48.6783 14.1135C52.1832 16.6599 53.6498 21.1736 52.311 25.2938L46.0848 44.4562C44.7461 48.5764 40.9065 51.366 36.5742 51.366H16.4258C12.0935 51.366 8.25394 48.5764 6.9152 44.4562L0.688972 25.2938C-0.64977 21.1736 0.81681 16.6599 4.32168 14.1135L20.6221 2.27051Z"
-                fill="url(#paint0_linear_202_36)" />
-              <defs>
-                <linearGradient id="paint0_linear_202_36" x1="26.5" y1="-2" x2="26.5" y2="57"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#1523B7" />
-                  <stop offset="1" stop-color="#275AF3" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span>08</span>
-          </div>
-          <div class="card__text">
-            <p>
-              Keep internal records of prices, warehouse, etc.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="action" id="down">
-    <div class="container">
-      <div class="action__inner">
-        <div class="action__title title">Do you have a project or partnership?</div>
-        <form action="#" method="post" class="action__form">
-          <input class="action__input" type="text" placeholder="First and last name" />
-          <input class="action__input" type="text" placeholder="Phone number" />
-          <input class="action__input" type="text" placeholder="Email" />
-          <input class="action__input" type="text" placeholder="Company name" />
-          <button type="button" class="action__btn">ENTER</button>
-        </form>
-        <div class="action__agree">
-          I agree with LBS Group <a href="">Private policy</a>
+        <div class="footer__box">
+          <div class="footer__box-inner">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__contacts">
+              <a href="mailto:info@lbs.systems" class="footer__elem">info@lbs.company</a>
+              <a href="tel:+380732697818" class="footer__elem">+380 (73) 269 78 18 </a>
+              <a href="tel:+380962697818" class="footer__elem">+380 (96) 269 78 18</a>
+            </div>
+          </div>
+          <div class="footer__socialnet">
+            <a href="#" class="footer__socialnet-item">inst</a>
+            <a href="#" class="footer__socialnet-item">fb</a>
+            <a href="#" class="footer__socialnet-item">viber</a>
+            <a href="#" class="footer__socialnet-item">tg</a>
+          </div>
+        </div>
+        <!-- start desktop menu -->
+        <nav class="footer__nav">
+          <!-- The menu is divided into two parts, it's desktop version on 1024 this block display:none; . -->
+          <ul>
+            <li>
+              <a href="#">opportunities</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/odoo.html">Odoo</a>
+                </li>
+                <li>
+                  <a href="/crm.html">CRM system</a>
+                </li>
+                <li>
+                  <a href="/project-management.html">HR: Project Management</a>
+                </li>
+                <li>
+                  <a href="/finance.html">Finance and Accounting</a>
+                </li>
+                <li>
+                  <a href="/production.html">Production</a>
+                </li>
+                <li>
+                  <a href="/logistics.html">Logistics and Transport</a>
+                </li>
+                <li>
+                  <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                </li>
+                <li>
+                  <a href="/logistics-3.html">POS terminals</a>
+                </li>
+                <li>
+                  <a href="/marketing.html">Marketing</a>
+                </li>
+                <li>
+                  <a href="/web.html">Web & E-commerce</a>
+                </li>
+                <li>
+                  <a href="/banking.html">Automation of banking activities</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">services</a>
+              <ul class="footer-submenu">
+                <li>
+                  <a href="/business-analytics.html">Buisness analytics</a>
+                </li>
+                <li>
+                  <a href="/consulting.html">Consulting</a>
+                </li>
+                <li>
+                  <a href="/integrations.html">Introduction</a>
+                </li>
+                <li>
+                  <a href="/support.html">Support</a>
+                </li>
+                <li>
+                  <a href="/user-training.html">User training</a>
+                </li>
+                <li>
+                  <a href="/outsourcing.html">Outsourcing</a>
+                </li>
+                <li>
+                  <a href="/mobile-app.html">Mobile app</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/partnership.html">partnership</a>
+            </li>
+            <li>
+              <a href="/blog.html">blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end desktop menu -->
+
+        <!-- start mobile menu -->
+
+        <!-- Note that if the menu has a submenu, the teg <a> changes to the <div> tag for first level -->
+        <div class="footer-mobile-menu">
+          <nav class="footer-nav-mobile">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link">Opportunities</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/odoo.html">Odoo</a>
+                  </li>
+                  <li>
+                    <a href="/crm.html">CRM system</a>
+                  </li>
+                  <li>
+                    <a href="/project-management.html">HR: Project Management</a>
+                  </li>
+                  <li>
+                    <a href="/finance.html">Finance and Accounting</a>
+                  </li>
+                  <li>
+                    <a href="/production.html">Production</a>
+                  </li>
+                  <li>
+                    <a href="/logistics.html">Logistics and Transport</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-2.html">Warehouses аnd Purchases</a>
+                  </li>
+                  <li>
+                    <a href="/logistics-3.html">POS terminals</a>
+                  </li>
+                  <li>
+                    <a href="/marketing.html">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="/web.html">Web & E-commerce</a>
+                  </li>
+                  <li>
+                    <a href="/banking.html">Automation of banking activities</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="link">Services</div>
+                <ul class="submenu">
+                  <li>
+                    <a href="/business-analytics.html">Buisness analytics</a>
+                  </li>
+                  <li>
+                    <a href="/consulting.html">Consulting</a>
+                  </li>
+                  <li>
+                    <a href="/integrations.html">Introduction</a>
+                  </li>
+                  <li>
+                    <a href="/support.html">Support</a>
+                  </li>
+                  <li>
+                    <a href="/user-training.html">User training</a>
+                  </li>
+                  <li>
+                    <a href="/outsourcing.html">Outsourcing</a>
+                  </li>
+                  <li>
+                    <a href="/mobile-app.html">Mobile app</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="link" href="/partnership.html">partnership</a>
+              </li>
+              <li>
+                <a class="link" href="/blog.html">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end mobile menu -->
+
+        <div class="footer__socialnet mobile">
+          <a href="#" class="footer__socialnet-item">inst</a>
+          <a href="#" class="footer__socialnet-item">fb</a>
+          <a href="#" class="footer__socialnet-item">viber</a>
+          <a href="#" class="footer__socialnet-item">tg</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169 LBS Cloud
         </div>
       </div>
-    </div>
-  </section>
-</main>
-<div id="footer"></div>
-</div>
-<script src="js/libs/jolty-libs.js"></script>
+    </footer>
+  </div>
+  <script src="js/libs/jolty-libs.js"></script>
 </body>
 
 </html>
